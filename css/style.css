@@ -1,0 +1,876 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+/* 모바일 가로 스크롤 방지 210427 :s */
+html,
+body {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 모바일 가로 스크롤 방지 210427 :e */
+
+body {
+  font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo",
+    "Nanum Barun Gothic", "Malgun Gothic", "MalgunGothic", sans-serif !important;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none !important;
+  color: #333333;
+  cursor: pointer;
+}
+input.form-control {
+  border: none;
+  -webkit-box-shadow: none;
+}
+button {
+  border: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none;
+}
+img {
+  border: 0 none;
+  font-size: 0;
+  line-height: 0;
+}
+/* ------------------------------------------헤더 fix------------------------ */
+.header_top_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.pd_top_92 {
+  padding-top: 92px;
+}
+/* --------------------부트스트랩 버튼효과 제거 ---------------------------------*/
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none !important;
+  outline: none !important;
+  outline-offset: 0 !important;
+  text-decoration: none !important;
+}
+
+/* ---------------------모달창 공통 : s---------------- */
+.modal {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*---------------------- table ----------------------------- */
+table {
+  width: 100%;
+}
+table thead th {
+  padding: 29px 0;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+  color: #535353;
+}
+table tbody {
+  margin: 113px 0;
+  width: 100%;
+  border-top: solid 2px #dbdbdb;
+  border-bottom: solid 2px #dbdbdb;
+}
+table tbody th,
+table tbody td {
+  padding: 0 36px;
+}
+table tbody tr {
+  width: 100%;
+  height: 94px;
+  border-bottom: solid 1px #dbdbdb;
+  box-sizing: border-box;
+}
+table tbody tr:last-child {
+  background-color: #f3f3f3;
+  border-bottom: none;
+}
+table tbody th {
+  font-size: 22px;
+  font-weight: 500;
+  color: #646464;
+}
+table thead th {
+  font-size: 26px;
+  color: #333333;
+}
+table tbody th {
+  font-size: 21px;
+  color: #666666;
+}
+table tbody tr:last-child {
+  background-color: transparent;
+  border-bottom: none;
+}
+table tbody td select,
+table tbody td input[type="text"] {
+  padding: 0 25px;
+  width: 489px;
+  height: 48px;
+  background-color: #f1f1f1;
+  border: none;
+}
+table tbody td select {
+  background-image: url(../img/icon_down_tri.png);
+  /* 네이티브 화살표를 커스텀 화살표로 대체 */
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+}
+table tbody td textarea.form-control {
+  padding: 27px;
+  background-color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+table tbody td p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+/* 회원가입 핸드폰번호 */
+table tbody td.inputPhoneBox input,
+table tbody td.inputSelectBox input,
+table tbody td.inputSelectBox select {
+  display: inline-block;
+  width: 142px;
+}
+/* 회원가입 약관 */
+table tbody tr th label,
+table tbody tr td button {
+  font-size: 20px;
+  font-weight: 400;
+  color: #686767;
+}
+table tbody tr th label {
+  padding-left: 18px;
+}
+table tbody tr:first-child th label {
+  font-size: 22px;
+  font-weight: 600;
+  color: #646464;
+}
+table tbody tr td button {
+  color: #979797;
+  border-bottom: 1px solid #dcdcdc;
+}
+/* 회원가입 필수입력항목 */
+table tbody th.must::after {
+  content: "*";
+  font-size: 23px;
+  font-weight: 300;
+  color: #4178dc;
+}
+
+table tbody td {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  color: #757575;
+}
+table tbody td .price {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffa302;
+}
+table tbody td input::placeholder {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+table tbody td select,
+table tbody td select option {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+#timepicker {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+table tbody tr td.tdPadding {
+  padding: 18px 36px;
+}
+
+.util {
+  padding: 14px 0 17px;
+  border-bottom: solid 1px #d4d4d4;
+}
+.util ul {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.util ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+}
+.util ul li .icon {
+  display: flex;
+  align-items: center;
+}
+.util ul li .icon::before {
+  content: "";
+  display: inline-block;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.util ul li .icon.login::before {
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/icon_login.png);
+}
+.util ul li .signup {
+  color: #7391da;
+}
+/* -------------------헤더,푸터 ------------------------ */
+header {
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+header ul {
+  display: inline-flex;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+header ul li {
+  width: calc(100% / 4);
+}
+header ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+figure {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+figure::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+/* 메인슬라이드 배너 : s */
+figure.main::after {
+  display: none;
+}
+/* 210427 수정 :s*/
+
+#myCarousel {
+  margin-top: 10px;
+}
+#myCarousel .carousel-inner {
+  height: 648px;
+}
+#myCarousel .item {
+  position: relative;
+  z-index: 1;
+}
+#myCarousel .item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+#myCarousel .carousel-inner > .item {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  margin-right: 10px !important;
+}
+/* 210427 수정 :e*/
+
+/* 메인슬라이드 배너 : e */
+
+figure .banner {
+  width: 100%;
+  height: 648px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+figure .mainBanner {
+  background-image: url(../img/img_mainBanner.png);
+}
+figure .figure_inner {
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+figure .figure_inner h1 {
+  text-shadow: 3.8px 3.3px 8.2px rgba(26, 26, 26, 0.05);
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.38;
+  letter-spacing: -2.6px;
+  color: #ffffff;
+}
+
+figure .figure_inner h1 span {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.58;
+  letter-spacing: -2.6px;
+  color: #ebd796;
+}
+figure .figure_inner h1 span.big {
+  font-size: 63px;
+  color: #fde187;
+}
+figure .figure_inner h1 span.dot {
+  position: relative;
+  margin: 0 -6px;
+}
+figure .figure_inner h1 span.dot::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #ebd796;
+  left: 50%;
+  top: -5px;
+}
+figure .figure_inner .bannerLine {
+  margin: 47px 0 27px;
+  width: 54px;
+  height: 6px;
+  background-color: #ebd796;
+}
+figure .figure_inner p {
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+}
+figure .figure_inner p span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+figure .mainBanner02 {
+  /* 수정요소 210513 : s */
+  margin-top: -10px;
+  background-image: url(../img/img_mainBanner02.png);
+}
+.mainBanner02 .figure_inner .mainBannerWrap {
+  /* 수정요소 210513 : s */
+  display: block;
+  text-align: center;
+}
+.mainBanner02 .figure_inner .mainBannerWrap .left {
+  margin-right: auto;
+}
+.mainBanner02 .figure_inner .mainBannerWrap .left p {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 2.5;
+  letter-spacing: -1.4px;
+  color: #dedede;
+}
+/* 210427 수정 :s*/
+.mainBanner02 .figure_inner .mainBannerWrap .right {
+  margin-top: 10px;
+  margin-left: auto;
+}
+/* 210427 수정 :e*/
+
+/* 수정요소 210513 : s */
+.mainBanner02 .figure_inner .mainBannerWrap .right h1 {
+  font-weight: 400;
+}
+.mainBanner02 .figure_inner .mainBannerWrap .right h1 span {
+  color: #ffffff;
+}
+figure .mainBanner02 .figure_inner .bannerLine {
+  margin: 0 auto;
+  background-color: #eefd87;
+}
+figure .mainBanner02 .figure_inner p {
+  margin: 10px 0;
+}
+figure .mainBanner02 .figure_inner .left span {
+  margin-right: 10px;
+  font-weight: 300;
+  color: #dfdfdf;
+}
+figure .mainBanner02 .figure_inner .mainBannerWrap {
+  position: relative;
+}
+figure .mainBanner02 .figure_inner .mainBannerWrap::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 305px;
+  height: 533px;
+  background-image: url(../img/img_mainBanner02_m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+figure .mainBanner02 .figure_inner .mainBannerWrap::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 297px;
+  height: 533px;
+  background-image: url(../img/img_mainBanner02_w.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+figure .mainBanner02 .figure_inner .right p {
+  color: #eefd87;
+  font-size: 40px;
+}
+figure .mainBanner02 .figure_inner .right p span {
+  font-size: 40px;
+}
+/* 수정요소 210513 : e */
+
+footer {
+  padding: 65px 0 127px;
+  width: 100%;
+  background-color: #ebebeb;
+}
+footer .info li {
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 1.97;
+  letter-spacing: -0.78px;
+  color: #636363;
+}
+footer .info li span {
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.97;
+  letter-spacing: -0.78px;
+  color: #636363;
+}
+footer .info p {
+  font-size: 14.5px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+footer .info p a {
+  display: inline-block;
+}
+footer .info p span {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #a0a0a0;
+}
+.mobile {
+  visibility: hidden;
+  display: none;
+}
+.pc {
+  display: block;
+  visibility: visible;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1320px !important;
+  }
+}
+@media screen and (max-width: 959px) {
+  .pc {
+    display: none;
+    visibility: hidden;
+  }
+  .mobile {
+    visibility: visible;
+    display: block;
+  }
+  header {
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    background-color: #ffffff;
+    transition: 0.5s;
+  }
+  header .header_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  header .header_inner .menu a {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 63px;
+    height: 63px;
+    background-image: url(../img/mobile/icon_menu_mb.png);
+    background-repeat: no-repeat;
+    background-size: 20px 13px;
+    background-position: center;
+  }
+  header .header_inner .back a {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 63px;
+    height: 63px;
+    background-image: url(../img/mobile/icon_arrow_prev_b_mb.png);
+    background-repeat: no-repeat;
+    background-size: 8px 15px;
+    background-position: center;
+  }
+  header .header_inner .logo,
+  header .header_inner .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .header_inner .logo a {
+    width: 111px;
+    height: 33px;
+    background-image: url(../img/mobile/img_logo_mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .header_inner .center a {
+    display: block;
+  }
+  header .header_inner .center h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #484848;
+  }
+  #myCarousel {
+    margin-top: 0;
+  }
+  #myCarousel .carousel-inner {
+    height: 215px;
+  }
+  #myCarousel .item::after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* 210427 수정 :s*/
+
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+  .carousel-indicators li,
+  .carousel-indicators li.active {
+    margin-right: 0;
+  }
+  /* 210427 수정 :e*/
+
+  figure::after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  figure .banner {
+    width: 100%;
+    height: 215px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  figure .figure_inner h1 {
+    font-size: 20px;
+    line-height: 1.64;
+    letter-spacing: -1.58px;
+    margin-top: 0;
+  }
+  figure .figure_inner h1 span {
+    font-size: 27px;
+  }
+  /* 정기구독형 text 및 영역 수정 210423 : s*/
+  figure .figure_inner h1 span.dot {
+    font-size: 21px;
+    letter-spacing: -3.58px;
+    margin: 0;
+    color: #ffffff;
+  }
+  figure .figure_inner h1 span.dot::before {
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    top: -2px;
+  }
+  /* 정기구독형 text 및 영역 수정 210423 : e*/
+
+  figure .figure_inner h1 span.big {
+    font-size: 26px;
+    line-height: 1.31;
+    letter-spacing: -1.13px;
+  }
+  figure .figure_inner p {
+    font-size: 15px;
+  }
+  figure .figure_inner p span {
+    font-size: 15px;
+  }
+  figure .figure_inner .bannerLine {
+    margin: 15px 0 10px;
+    width: 18px;
+    height: 2px;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap {
+    display: block;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .left {
+    text-align: center;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .right {
+    text-align: center;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .right h1 {
+    /* 모바일 수정요소 210513 : s */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.31;
+    letter-spacing: -1.13px;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .right h1 span {
+    /* 모바일 수정요소 210513 : s */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.31;
+    letter-spacing: -1.13px;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .left.mobile p {
+    font-size: 10px;
+    margin: 0 0 0;
+    letter-spacing: -0.4px;
+  }
+  .mainBanner02 .figure_inner .bannerLine {
+    margin: 20px auto;
+  }
+  /* 모바일 수정요소 210513 : s */
+
+  figure .mainBanner02 .figure_inner .mainBannerWrap::before {
+    left: 16px;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  figure .mainBanner02 .figure_inner .mainBannerWrap::after {
+    right: 10px;
+    top: 66px;
+    width: 60px;
+    height: 100%;
+    background-size: contain;
+  }
+  .mainBanner02 .figure_inner .mainBannerWrap .left p,
+  .mainBanner02 .figure_inner .mainBannerWrap .left p span {
+    font-size: 11px;
+    letter-spacing: -0.55px;
+  }
+  figure .mainBanner02 .figure_inner .right p,
+  figure .mainBanner02 .figure_inner .right p span {
+    font-size: 12px;
+  }
+
+  /* 모바일 수정요소 210513 : e */
+
+  footer {
+    padding: 10px 0 60px;
+    width: 100%;
+    background-color: #ebebeb;
+  }
+  footer .tit h1 {
+    width: 90px;
+    height: 24px;
+    background-image: url(../img/mobile/img_logo_g_mb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  footer .info ul {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  footer .info li {
+    font-size: 10px;
+  }
+  footer .info li span {
+    font-size: 10px;
+  }
+  footer .info p {
+    font-size: 10px;
+  }
+  footer .info p span {
+    font-size: 10px;
+  }
+
+  table tbody th,
+  table tbody td {
+    padding: 0;
+  }
+  table tbody td {
+    font-size: 13px;
+    text-align: right;
+    color: #757575;
+  }
+  table tbody td select,
+  table tbody td select option {
+    font-size: 13px;
+  }
+  table tbody td input::placeholder {
+    font-size: 13px;
+  }
+  table thead th {
+    padding: 6px 0;
+    font-size: 13px;
+  }
+  table tbody tr {
+    height: 52px;
+  }
+
+  /* 모달창 */
+  .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .mobileGnb {
+    display: none;
+  }
+  .mobileGnb.on {
+    display: block;
+  }
+  .mobileGnb .top {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    line-height: 61px;
+    background-color: #444444;
+    color: #ffffff;
+  }
+  .mobileGnb .top a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.79;
+    letter-spacing: -0.7px;
+    color: #b8b8b8;
+  }
+  .mobileGnb .top a.icon::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/mobile/icon_login_mb.png);
+  }
+  .mobileGnb .top a span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.79;
+    letter-spacing: -0.7px;
+    color: #b8b8b8;
+  }
+  .mobileGnb .top a span.logIn {
+    color: #ffffff;
+  }
+  .mobileGnb .top .closeBtn {
+    margin-right: -16px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-image: url(../img/mobile/icon_close_mb.png);
+    background-position: center;
+  }
+
+  .mobileGnb .gnb li {
+    padding: 0 16px;
+    height: 63px;
+    line-height: 63px;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .mobileGnb .gnb li:hover a {
+    font-weight: 600;
+  }
+  .mobileGnb .gnb li a {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+    color: #484848;
+  }
+  /* table select 화살표 */
+  table tbody td select {
+    background-size: 12px 6px;
+  }
+  /* *** */
+  table tbody th.must::after {
+    content: "*";
+    font-size: 14px;
+  }
+}

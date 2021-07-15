@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>어드민메인_기본설정</title>
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 gnb">
+              <ul>
+                <li><a href="/adminSetBase.html">기본설정</a></li>
+                <li><a href="/adminSetMember.html">회원설정 </a></li>
+                <li><a href="/adminExamInfo.html">입시자료실 </a></li>
+                <li><a href="/adminCustomer.html">고객센터 </a></li>
+                <li><a href="/adminMypage.html">마이페이지 </a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 util">
+              <ul>
+                <li class="icon"><a href="#">관리자님(admin)</a></li>
+                <li class="icon"><a href="#">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section adminSetBase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 side">
+            <div class="menuTitle">
+              <img src="./img/admin/icon_set.png" alt="기본설정" /><span
+                >기본설정</span
+              >
+            </div>
+            <div class="menuList">
+              <ul>
+                <li class="on"><a href="#item01">기본 정보 설정</a></li>
+                <li><a href="#item02">약관 ·개인정보 처리방침</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-10 content">
+            <div class="item item01" id="item01">
+              <div class="contentTitle">
+                <span>기본정보 설정</span>
+                <div class="btnArea">
+                  <button class="dgBtn">저장</button>
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="4">회사정보</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">상호(회사명)</th>
+                    <td colspan="1">에듀내일</td>
+                    <th colspan="1">사업자등록번호</th>
+                    <td colspan="1">000-00-0000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">대표자명</th>
+                    <td colspan="3">이기정</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">대표 이메일 (필수)</th>
+                    <td colspan="3">
+                      <input
+                        class="form-control inputCustom"
+                        type="text"
+                        placeholder="이메일"
+                      />&nbsp;@&nbsp;<input
+                        class="form-control inputCustom widWidly"
+                        type="text"
+                        placeholder="입력해주세요"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">사업장 주소</th>
+                    <td colspan="3">
+                      <input
+                        class="form-control inputCustom"
+                        type="text"
+                        placeholder="우편번호"
+                      />&emsp;&ensp;<input
+                        class="form-control inputCustom widWidly"
+                        type="text"
+                        placeholder="주소를 입력해주세요"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">통신판매 신고번호</th>
+                    <td colspan="3">2021-강남-OOOO</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="4">고객센터</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">전화번호</th>
+                    <td colspan="3">0000-0000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="item item02" id="item02">
+              <div class="contentTitle">
+                <span>약관 ·개인정보 처리방침</span>
+                <div class="btnArea">
+                  <button class="dgBtn">저장</button>
+                </div>
+              </div>
+              <table class="table">
+                <thead hidden>
+                  <tr>
+                    <th colspan="4"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">이용약관 ·개인정보 동의 내용</th>
+                    <td colspan="3">
+                      <span>표준약관 - 표준약관 제 10023호</span>
+                      <textarea
+                        class="form-control textareaCustom"
+                        id="exampleFormControlTextarea1"
+                        rows="13"
+                      >
+제1조(목적)
+표준약관 제10023호 이 약관은 에듀내일이 운영하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다. ※ 「PC통신등을 이용하는 전자거래에 대해서도 그 성질에 반하지 않는한 이 약관을 준용합니다」
+                      
+제2조(정의)
+1 “에듀내일” 이란 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울 러 에듀내일을 운영하는 사업자의 의미로도 사용합니다.
+제1조(목적)
+표준약관 제10023호 이 약관은 에듀내일이 운영하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다. ※ 「PC통신등을 이용하는 전자거래에 대해서도 그 성질에 반하지 않는한 이 약관을 준용합니다」
+                      
+제2조(정의)
+1 “에듀내일” 이란 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울 러 에듀내일을 운영하는 사업자의 의미로도 사용합니다.
+                      </textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">제3자 정보 제공 동의 내용</th>
+                    <td colspan="3">
+                      <textarea
+                        class="form-control textareaCustom"
+                        id="exampleFormControlTextarea1"
+                        rows="13"
+                      >
+제3자 정보 제공 동의</textarea
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">혜택성 정보 수신 동의 내용</th>
+                    <td colspan="3">
+                      <textarea
+                        class="form-control textareaCustom"
+                        id="exampleFormControlTextarea1"
+                        rows="13"
+                      >
+혜택성 정보수집 동의</textarea
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 info">
+              <p>
+                Copyright © 2021 Edunaeil Consulting co.,ltd All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

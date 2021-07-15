@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :s*/ -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :e*/ -->
+    <title>결제(정기구독)</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./js/header.js"></script>
+  </head>
+  <body>
+    <div class="util pc">
+      <div class="container">
+        <ul>
+          <li><a href="/login.html" class="icon login">로그인</a></li>
+          <li><a href="/signUp.html" class="icon signup">ㅣ 회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header pc" id="headerFix">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 logo">
+              <a href="/main.html"
+                ><img src="./img/img_logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="col-md-6 gnb">
+              <ul>
+                <li><a href="/subProgram.html">프로그램 소개</a></li>
+                <li><a href="/subConsult.html">컨설턴트 소개</a></li>
+                <li><a href="/subExamInfo.html">입시정보</a></li>
+                <li><a href="/subCustomer.html">고객센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header mobile">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row dfCenter">
+            <div class="col-4 back">
+              <a href="#"></a>
+            </div>
+            <div class="col-4 center">
+              <a href="/main.html"><h1>결제 정보</h1></a>
+            </div>
+            <div class="col-4">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <figure class="figure pc">
+      <div class="banner subBanner01">
+        <div class="figure_inner">
+          <div class="container">
+            <p>학교 밖 담임선생님, <span>박샘</span></p>
+            <div class="bannerLine"></div>
+            <h1>
+              <span>과정</span>을 만들면,<br />
+              합격을 위한 길이 보입니다.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </figure>
+    <!-- section.member (회원 ,정기구독) 일 경우, 가격,버튼 색상 yBtn -->
+    <!-- section.noMember (비회원) 일 경우, 가격,버튼 색상 bBtn -->
+    <section class="content subPay noMember">
+      <div class="content_inner container">
+        <div class="row">
+          <div class="item item01">
+            <table>
+              <thead class="pc">
+                <tr>
+                  <th colspan="2">결제 정보</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold">신청 프로그램</th>
+                  <td>정기구독 컨설팅</td>
+                </tr>
+                <tr>
+                  <th class="bold">신청일</th>
+                  <td>2021. 04. 21</td>
+                </tr>
+                <tr>
+                  <th class="bold">총 주문금액</th>
+                  <td><span class="price">48,500</span>원·월</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="item item02">
+            <table>
+              <thead class="pc">
+                <tr>
+                  <th colspan="2">결제 카드사</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold">카드사</th>
+                  <td>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>카드사 선택</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold">결제 방식</th>
+                  <td>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>일시불</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="item item03 pc">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">약관 동의</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio1"
+                        id="flexRadio1"
+                      />
+                      <label class="form-check-label" for="flexRadio1">
+                        전체 약관 동의
+                      </label>
+                    </div>
+                  </th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio2"
+                        id="flexRadio2"
+                      />
+                      <label class="form-check-label" for="flexRadio2">
+                        개인정보 이용 및 수집 동의 (필수)
+                      </label>
+                    </div>
+                  </th>
+                  <td><button type="button">자세히</button></td>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio3"
+                        id="flexRadio3"
+                      />
+                      <label class="form-check-label" for="flexRadio3">
+                        결제 대행 서비스 약관 동의 (필수)
+                      </label>
+                    </div>
+                  </th>
+                  <td><button type="button">자세히</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="item item03 mobile">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">약관 동의</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check radioCustom">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio4"
+                        id="flexRadio4"
+                      />
+                      <label class="form-check-label" for="flexRadio4"> </label>
+                      <span>서비스 이용약관 전체 동의 </span>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check radioCustom">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio5"
+                        id="flexRadio5"
+                      />
+                      <label class="form-check-label" for="flexRadio5"> </label>
+                      <span>개인정보 이용 및 수집 동의 (필수)</span>
+                      <button type="button"></button>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check radioCustom">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio6"
+                        id="flexRadio6"
+                      />
+                      <label class="form-check-label" for="flexRadio6"> </label>
+                      <span>결제 대행 서비스 약관 동의 (필수)</span>
+                      <button type="button"></button>
+                    </div>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btnArea">
+            <a href="/subPay.html">
+              <button class="yBtn"><span>48,500</span>원 결제하기</button>
+              <button class="bBtn"><span>48,500</span>원 결제하기</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 tit">
+              <h1 class="pc"><img src="./img/img_logo_g.png" alt="logo" /></h1>
+              <h1 class="mobile"></h1>
+            </div>
+            <div class="col-lg-9 info">
+              <ul>
+                <li>
+                  <span>기업명 :</span> (주)에듀내일컨설팅 |
+                  <span> 대표이사 :</span> 이기정 |
+                  <span> 사업자등록번호 :</span> 809-81-0218
+                </li>
+                <li>
+                  <span>주소 :</span> 서울시 종로구 새문안로 3길 3 내일신문 지하
+                  1층 | <span> 전화번호 :</span> 02-2287-2386
+                </li>
+                <li>
+                  <span>통신판매번호 :</span> 제 2021-서울종로-0659 호 |
+                  <span> 이메일 :</span>kjlee@parksam.co.kr
+                </li>
+              </ul>
+              <p>
+                <a href="/terms.html"><span>이용약관</span></a> ㅣ
+                <a href="/termsPrivacy.html"><span>개인정보처리방침</span></a>
+                Copyright © 2021 Edunaeil Consulting co.,ltd All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

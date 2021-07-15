@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :s*/ -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :e*/ -->
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./js/header.js"></script>
+  </head>
+  <body>
+    <div class="util pc">
+      <div class="container">
+        <ul>
+          <li><a href="/login.html" class="icon login">로그인</a></li>
+          <li><a href="/signUp.html" class="icon signup">ㅣ 회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header pc" id="headerFix">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 logo">
+              <a href="/main.html"
+                ><img src="./img/img_logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="col-md-6 gnb">
+              <ul>
+                <li><a href="/subProgram.html">프로그램 소개</a></li>
+                <li><a href="/subConsult.html">컨설턴트 소개</a></li>
+                <li><a href="/subExamInfo.html">입시정보</a></li>
+                <li><a href="/subCustomer.html">고객센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header mobile loginMb">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row dfCenter">
+            <div class="col-4 back">
+              <a href="#"></a>
+            </div>
+            <div class="col-4 center">
+              <a href="/main.html"><h1>로그인</h1></a>
+            </div>
+            <div class="col-4">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <figure class="figure pc" id="headerNext">
+      <div class="banner mainBanner">
+        <div class="figure_inner">
+          <div class="container">
+            <h1>
+              <span class="big">주기적인 상담</span><br />
+              국내최초
+              <span class="dot">정</span>
+              <span class="dot">기</span>
+              <span class="dot">구</span>
+              <span class="dot">독</span>
+              <span class="dot">형</span>
+              대입컨설팅
+            </h1>
+            <div class="bannerLine"></div>
+            <p>학교 밖 담임선생님, <span>박샘</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+    <section class="content contentLogin">
+      <div class="content_inner container">
+        <div class="row">
+          <div class="tit pc">
+            <h1>로그인</h1>
+            <div class="titLine"></div>
+          </div>
+          <div class="item itemLogin">
+            <div class="left">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">아이디</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="아이디를 입력해주세요"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">비밀번호</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="비밀번호를 입력해주세요"
+                  />
+                </div>
+                <div class="btnArea">
+                  <a href="/login.html">
+                    <button class="yBtn pc">로그인</button>
+                    <button class="bBtn mobile">로그인</button>
+                  </a>
+                </div>
+                <div class="loginBtm pc">
+                  <ul>
+                    <li><a href="/signUp.html" class="">회원가입</a></li>
+                    <li>
+                      <a href="/findIdPw.html" class="">비밀번호 찾기</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="loginBtm mobile">
+                  <ul>
+                    <li><a href="/signUp.html" class="">아이디 찾기</a></li>
+                    <li>
+                      <a href="/findIdPw.html" class="">비밀번호 찾기</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btnArea mobile">
+                  <a href="/login.html">
+                    <button class="bBorderBtn"><span>회원가입</span></button>
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="right pc">
+              <div class="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pc">
+      <div class="footer_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 tit">
+              <h1><img src="./img/img_logo_g.png" alt="logo" /></h1>
+            </div>
+            <div class="col-lg-9 info">
+              <ul>
+                <li>
+                  <span>기업명 :</span> (주)에듀내일컨설팅 |
+                  <span> 대표이사 :</span> 이기정 |
+                  <span> 사업자등록번호 :</span> 809-81-0218
+                </li>
+                <li>
+                  <span>주소 :</span> 서울시 종로구 새문안로 3길 3 내일신문 지하
+                  1층 | <span> 전화번호 :</span> 02-2287-2386
+                </li>
+                <li>
+                  <span>통신판매번호 :</span> 제 2021-서울종로-0659 호 |
+                  <span> 이메일 :</span>kjlee@parksam.co.kr
+                </li>
+              </ul>
+              <p>
+                <a href="/terms.html"><span>이용약관</span></a> ㅣ
+                <a href="#"><span>개인정보처리방침</span></a>
+                Copyright © 2021 Edunaeil Consulting co.,ltd All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

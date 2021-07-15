@@ -1,0 +1,906 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+body {
+  font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo",
+    "Nanum Barun Gothic", "Malgun Gothic", "MalgunGothic", sans-serif !important;
+}
+ul,
+li {
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+a {
+  display: block;
+  text-decoration: none !important;
+  color: #333333;
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+input.form-control {
+  border: none;
+  -webkit-box-shadow: none;
+}
+button {
+  border: none;
+  background: none;
+}
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+/* 모바일메뉴 모달창 :s */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.mobileGnb {
+  display: none;
+}
+.mobileGnb.on {
+  display: block;
+  overflow-y: scroll;
+}
+.mobileGnb .top {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 61px;
+  line-height: 61px;
+  background-color: #444444;
+  color: #ffffff;
+}
+.mobileGnb .top a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.79;
+  letter-spacing: -0.7px;
+  color: #b8b8b8;
+}
+.mobileGnb .top a.icon::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/mobile/icon_login_mb.png);
+}
+.mobileGnb .top a span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.79;
+  letter-spacing: -0.7px;
+  color: #b8b8b8;
+}
+.mobileGnb .top a span.logIn {
+  color: #ffffff;
+}
+.mobileGnb .top .closeBtn {
+  margin-right: -16px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-image: url(../img/mobile/icon_close_mb.png);
+  background-position: center;
+}
+.mobileGnb .gnb ul li {
+  padding: 0 16px;
+  height: 63px;
+  line-height: 63px;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+}
+.mobileGnb .gnb ul li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 16px;
+  height: 7px;
+  transform: translateY(-50%);
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mobileGnb .gnb ul li.on::after {
+  background-image: url(../img/admin/icon_arrow_up_mb.png);
+}
+.mobileGnb .sub_gnb ul li::after {
+  display: none;
+}
+.mobileGnb .gnb li:hover a {
+  font-weight: 600;
+}
+.mobileGnb .gnb li a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  color: #484848;
+}
+.mobileGnb .gnb ul li.on + .sub_gnb {
+  /* display: block; */
+}
+.sub_gnb {
+  /* display: none; */
+  background-color: #f4f4f4;
+}
+.sub_gnb ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -1.05px;
+  color: #5a5a5a;
+}
+/* 모바일메뉴 모달창 :e */
+/* header */
+header .header_inner {
+  width: 100%;
+  height: 63px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #d8d8d8;
+}
+header .header_inner .icon {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 50% 50%;
+}
+header .header_inner .icon.menu {
+  background-image: url(../img/admin/icon_menu_mb.png);
+  margin-left: -20px;
+}
+header .header_inner .tit h1 {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #484848;
+}
+.adminMobile {
+  padding: 27px 20px 0;
+  margin-bottom: 50px;
+}
+.adminMobile table caption {
+  font-size: 18px;
+  font-weight: 600;
+  color: #484848;
+}
+.adminMobile table tbody tr th,
+.adminMobile table tbody tr td {
+  padding: 16px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+.adminMobile .table > tbody > tr:first-child > td,
+.adminMobile .table > tbody > tr:first-child > th {
+  border-top: none;
+}
+.adminMobile .table > tbody > tr:last-child > td,
+.adminMobile .table > tbody > tr:last-child > th {
+  border-bottom: 1px solid #ddd;
+}
+.adminMobile table tbody tr th {
+  width: 35%;
+}
+
+.adminMobile table .inputMb input {
+  margin-bottom: 6px;
+}
+.adminMobile table input {
+  border: solid 1px #dedede;
+  background-color: #ffffff;
+}
+
+.adminMobile table input::placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #d1d1d1;
+}
+.adminMobile table .inputBox.input-group .form-control {
+  margin: 3px 0;
+}
+.adminMobile .table > thead > tr > th {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 8px 0;
+  vertical-align: bottom;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.adminMobile .table > thead.border > tr > th {
+  border-bottom: 1px solid #d8d8d8;
+}
+.adminMobile .btnArea {
+  margin: 25px 0 65px;
+}
+.adminMobile .btnArea button {
+  margin: 6px 0;
+  width: 100%;
+  height: 46px;
+  border-radius: 3px;
+  border: solid 1px #6b6b6b;
+  background-color: #6b6b6b;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+.adminMobile .btnArea button.borderBtn {
+  border: solid 1px #6b6b6b;
+  background-color: #ffffff;
+  color: #6b6b6b;
+}
+/* checkbox style 공통 */
+.adminMobile .customCheckbox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.adminMobile .customCheckbox input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 36px;
+  width: 100%;
+  cursor: pointer;
+}
+.adminMobile .customCheckbox input[type="checkbox"] + label span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #484848;
+}
+.adminMobile .customCheckbox input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  background-image: url(../img/admin/icon_check_off_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+/* 보여질 부분의 스타일을 추가하면 된다. */
+.adminMobile .customCheckbox input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #6b6b6b;
+  background-image: url(../img/admin/icon_check_on_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.adminMobile .item.item02 {
+  margin-top: 66px;
+}
+.adminMobile .item.item02 ul li {
+  height: 52px;
+  line-height: 52px;
+  border-top: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+}
+.adminMobile .item.item02 ul li .liArea {
+  position: relative;
+}
+.adminMobile .item.item02 ul li .liArea::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 22px;
+  height: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/mobile/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.adminMobile .item.item02 ul li .liArea span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #484848;
+}
+.adminMobile .item.item02 table tbody tr th {
+  width: 63%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #484848;
+}
+.adminMobile .item.item02 table tbody tr td {
+  font-size: 13px;
+  font-weight: 400;
+  color: #646464;
+}
+.adminMobile .item span.searchSpan {
+  display: block;
+  margin: 16px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+.adminMobile .item table tbody tr td.bColor {
+  color: #2d4dd8;
+}
+.adminMobile .item table tbody tr td.rColor {
+  color: #de585c;
+}
+/* 일자 flex */
+.adminMobile .item table tbody tr td .inputBox {
+  display: flex;
+}
+.adminMobile .attachList.empty li {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -1.05px;
+  color: #d1d1d1;
+}
+.adminMobile .attachList li a {
+  padding: 3px 0;
+  text-decoration: underline !important;
+  font-size: 12px;
+  font-weight: 400;
+  color: #868686;
+}
+/* tr 파일첨부 */
+.adminMobile .table > tbody > tr.btnAreaTr > td,
+.adminMobile .table > tbody > tr.btnAreaTr > th {
+  padding-top: 0;
+  border-top: none;
+}
+/* switchCustom */
+.switchCustom .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switchCustom .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switchCustom .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a4a4a4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switchCustom .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switchCustom input:checked + .slider {
+  background-color: #6b6dff;
+}
+
+.switchCustom input:focus + .slider {
+  box-shadow: 0 0 1px #6b6dff;
+}
+
+.switchCustom input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.switchCustom .slider.round {
+  border-radius: 22px;
+}
+
+.switchCustom .slider.round:before {
+  border-radius: 50%;
+}
+/* adminSetBase01 */
+#adminSetBase01 table tbody tr td {
+  font-size: 13px;
+  font-weight: 400;
+}
+/* adminSetBase02 */
+#adminSetBase02 table tbody tr td.bold {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+#adminSetBase02 table tbody tr:nth-of-type(3) td,
+#adminSetBase02 table tbody tr:nth-of-type(5) td,
+#adminSetBase02 table tbody tr:nth-of-type(5) td {
+  border-top: none;
+}
+#adminSetBase02 table tbody tr td .textareaCustom {
+  font-size: 10px;
+}
+#adminSetBase02 .table > tbody > tr:last-child > td,
+#adminSetBase02 .table > tbody > tr:last-child > th {
+  border-bottom: none;
+}
+/* adminSetMember01 */
+#adminSetMember01 .input-group.inputBox {
+  display: inline-flex;
+}
+#adminSetMember01 table tbody tr th,
+#adminSetMember01 table tbody tr td {
+  vertical-align: middle;
+}
+
+#adminSetMember01 table tbody tr th,
+#adminSetMember01 table tbody tr td {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminSetMember01 .customCheckbox {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
+}
+#adminSetMember01 .customCheckbox::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+#adminSetMember01 .dropdown_inner {
+  padding: 24px 0;
+}
+#adminSetMember01 .dropdown_inner table {
+  width: 100%;
+}
+#adminSetMember01 .dropdown_inner table tbody tr th {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminSetMember01 .dropdown_inner table tbody tr td {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+#adminSetMember01 .dropdown_inner .btnArea {
+  margin-bottom: 0;
+}
+/* #adminSetMember02 */
+#adminSetMember02 table tbody tr th,
+#adminSetMember02 table tbody tr td {
+  vertical-align: middle;
+}
+#adminSetMember02 table tbody tr.tdAddress th {
+  vertical-align: baseline;
+}
+/* #adminMypage01 */
+#adminMypage01 .item.item02 {
+  margin-top: 0;
+}
+#adminMypage01 .item.item01 .table {
+  margin-bottom: 0;
+}
+/* #adminMypage02 */
+
+#adminMypage02 .item table tbody tr td .inputBox {
+  display: block;
+}
+/* #adminMypage03 */
+#adminMypage03 table tbody tr th,
+#adminMypage03 table tbody tr td {
+  vertical-align: middle;
+}
+#adminMypage03 .item.item01 .table {
+  margin-bottom: 0;
+}
+#adminMypage03 .item.item02 {
+  margin-top: 0;
+}
+#adminMypage03 .item.item02 table tbody tr th {
+  width: 30%;
+}
+#adminMypage03 .item .dropdown_inner .btnArea {
+  margin: 10px 0 20px;
+}
+#adminMypage03 .item.item03 {
+  margin-top: 30px;
+}
+/* #adminMypage04 */
+#adminMypage04 .item .dropdown_inner .btnArea {
+  margin: 10px 0 20px;
+}
+#adminMypage04 .item.item02 table tbody tr th {
+  width: 50%;
+}
+/* #adminMypage05 */
+#adminMypage05 .item .btnArea {
+  margin: 0;
+}
+
+/* #adminMypage06 */
+#adminMypage06 .item .dropdown_inner .btnArea {
+  margin: 10px 0 20px;
+}
+/* #adminMypage07 */
+#adminMypage07 table tbody tr th,
+#adminMypage07 table tbody tr td {
+  vertical-align: middle;
+}
+#adminMypage07 .item .btnArea {
+  margin: 0;
+}
+#adminMypage07 .item .dropdown_inner .btnArea {
+  margin: 10px 0 20px;
+}
+/* #adminMypage08 */
+#adminMypage08 table tbody tr th,
+#adminMypage08 table tbody tr td {
+  vertical-align: middle;
+}
+/* #adminMypage09 */
+#adminMypage09 table tbody tr th,
+#adminMypage09 table tbody tr td {
+  vertical-align: middle;
+}
+
+/* adminSetMember01 */
+#adminSetMember01 .input-group.inputBox {
+  display: inline-flex;
+}
+#adminSetMember01 table tbody tr th,
+#adminSetMember01 table tbody tr td {
+  vertical-align: middle;
+}
+/* adminExamInfo01 */
+#adminExamInfo01 table tbody tr:first-child th,
+#adminExamInfo01 table tbody tr:first-child td {
+  vertical-align: middle;
+}
+
+#adminExamInfo01 table tbody tr th,
+#adminExamInfo01 table tbody tr td {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminExamInfo01 .customCheckbox {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
+}
+#adminExamInfo01 .customCheckbox::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+#adminExamInfo01 .dropdown_inner {
+  padding: 24px 0;
+}
+#adminExamInfo01 .dropdown_inner table {
+  width: 100%;
+}
+#adminExamInfo01 .dropdown_inner table tbody tr th {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminExamInfo01 .dropdown_inner table tbody tr td {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+#adminExamInfo01 .dropdown_inner .btnArea {
+  margin-bottom: 0;
+}
+/* adminExamInfo02 */
+#adminExamInfo02 table tbody tr:first-child th,
+#adminExamInfo02 table tbody tr:first-child td {
+  vertical-align: middle;
+}
+
+#adminExamInfo02 table tbody tr th,
+#adminExamInfo02 table tbody tr td {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminExamInfo02 .customCheckbox {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
+}
+#adminExamInfo02 .customCheckbox::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+#adminExamInfo02 .dropdown_inner {
+  padding: 24px 0;
+}
+#adminExamInfo02 .dropdown_inner table {
+  width: 100%;
+}
+#adminExamInfo02 .dropdown_inner table tbody tr th {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminExamInfo02 .dropdown_inner table tbody tr td {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+#adminExamInfo02 .dropdown_inner .btnArea {
+  margin-bottom: 0;
+}
+/* adminExamInfo02 */
+#adminExamInfo02 .textareaCustom {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 0.91;
+  letter-spacing: -0.83px;
+  color: #6d6d6d;
+}
+#adminExamInfo02 .attachList li {
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+}
+#adminExamInfo02 .attachList li:last-child {
+  border-bottom: none;
+}
+
+#adminExamInfo02.adminMobile .attachList li a {
+  display: block;
+  height: 33px;
+}
+#adminExamInfo02.adminMobile .attachList li .deleteBtn {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/mobile/icon_delete_mb.png);
+}
+/* adminCustomer01 */
+
+#adminCustomer01 table tbody tr th,
+#adminCustomer01 table tbody tr td {
+  vertical-align: middle;
+}
+
+#adminCustomer01 table tbody tr th,
+#adminCustomer01 table tbody tr td {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminCustomer01 .customCheckbox {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: solid 1px #e2e2e2;
+  border-bottom: solid 1px #e2e2e2;
+}
+#adminCustomer01 .customCheckbox::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+#adminCustomer01 .dropdown_inner {
+  padding: 24px 0;
+}
+#adminCustomer01 .dropdown_inner table {
+  width: 100%;
+}
+#adminCustomer01 .dropdown_inner table tbody tr th {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminCustomer01 .dropdown_inner table tbody tr td {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+#adminCustomer01 .dropdown_inner .btnArea {
+  margin-bottom: 0;
+}
+/* adminCustomer02 */
+#adminCustomer02 .textareaCustom {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 0.91;
+  letter-spacing: -0.83px;
+  color: #6d6d6d;
+}
+#adminCustomer02.adminMobile .btnArea {
+  margin: 0;
+}
+/* adminCustomer03 */
+#adminCustomer03 table tbody tr th,
+#adminCustomer03 table tbody tr td {
+  vertical-align: middle;
+}
+
+#adminCustomer03 table tbody tr th,
+#adminCustomer03 table tbody tr td {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminCustomer03 .customCheckbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-top: none;
+  border-bottom: none;
+}
+#adminCustomer03 .customCheckbox::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/admin/icon_arrow_down_mb.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+#adminCustomer03 .dropdown_inner {
+  padding: 24px 0;
+}
+#adminCustomer03 .dropdown_inner table {
+  width: 100%;
+}
+#adminCustomer03 .dropdown_inner table tbody tr th {
+  width: 20%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #484848;
+}
+#adminCustomer03 .dropdown_inner table tbody tr td {
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #646464;
+}
+#adminCustomer03 .dropdown_inner .btnArea {
+  margin-bottom: 0;
+}
+#adminCustomer03 .adminMobile .btnArea {
+  margin: 0;
+}
+/* adminCustomer04 */
+#adminCustomer04 .textareaCustom {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.55;
+  letter-spacing: -0.83px;
+  color: #6d6d6d;
+}
+#adminCustomer04.adminMobile .btnArea {
+  margin: 0;
+}

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :s*/ -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <!-- /* 모바일 가로 스크롤 방지 meta 태그 210427 :e*/ -->
+
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- 부트스트랩 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./js/header.js"></script>
+  </head>
+  <body>
+    <div class="util pc">
+      <div class="container">
+        <ul>
+          <li><a href="/login.html" class="icon login">로그인</a></li>
+          <li><a href="/signUp.html" class="icon signup">ㅣ 회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header pc" id="headerFix">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 logo">
+              <a href="/main.html"
+                ><img src="./img/img_logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="col-md-6 gnb">
+              <ul>
+                <li><a href="/subProgram.html">프로그램 소개</a></li>
+                <li><a href="/subConsult.html">컨설턴트 소개</a></li>
+                <li><a href="/subExamInfo.html">입시정보</a></li>
+                <li><a href="/subCustomer.html">고객센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header mobile signUpMb">
+      <div class="header_inner">
+        <div class="container">
+          <div class="row dfCenter">
+            <div class="col-4 back">
+              <a href="#"></a>
+            </div>
+            <div class="col-4 center">
+              <a href="/main.html"><h1>회원가입</h1></a>
+            </div>
+            <div class="col-4">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <figure class="figure pc" id="headerNext">
+      <div class="banner mainBanner">
+        <div class="figure_inner">
+          <div class="container">
+            <h1>
+              <span class="big">주기적인 상담</span><br />
+              국내최초
+              <span class="dot">정</span>
+              <span class="dot">기</span>
+              <span class="dot">구</span>
+              <span class="dot">독</span>
+              <span class="dot">형</span>
+              대입컨설팅
+            </h1>
+            <div class="bannerLine"></div>
+            <p>학교 밖 담임선생님, <span>박샘</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+    <section class="content contentSignUp pc">
+      <div class="content_inner container">
+        <div class="row">
+          <div class="tit">
+            <h1>회원가입</h1>
+            <div class="titLine"></div>
+          </div>
+          <div class="tableBox loginInfo">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    로그인 정보<span class="must">필수 입력 항목</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold must" style="width: 20%">아이디</th>
+                  <td style="text-align: left">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="아이디 입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold must" style="width: 20%">비밀번호</th>
+                  <td style="text-align: left">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="비밀번호 입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold must" style="width: 20%">비밀번호 확인</th>
+                  <td style="text-align: left" class="tdPadding">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="비밀번호 재입력"
+                      aria-label="default input example"
+                    />
+                    <p>* 비밀번호는 6자리 이상으로 설정해주세요.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btnArea">
+              <a href="#">
+                <button class="gBtn">
+                  <span>본인인증</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="tableBox personInfo">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    인적 정보<span class="must">필수 입력 항목</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold must" style="width: 20%">이름</th>
+                  <td style="text-align: left">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="이름입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold must" style="width: 20%">핸드폰 번호</th>
+                  <td style="text-align: left" class="inputPhoneBox">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="010"
+                      aria-label="default input example"
+                    />
+                    &nbsp;-
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="1111"
+                      aria-label="default input example"
+                    />
+                    &nbsp;-
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="2222"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold must" style="width: 20%">생년월일</th>
+                  <td style="text-align: left" class="inputSelectBox">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="YYYY"
+                      aria-label="default input example"
+                    />
+                    &nbsp;&nbsp;
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>MM</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>DD</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold must" style="width: 20%">주소</th>
+                  <td style="text-align: left" class="tdPadding">
+                    <div class="input-group inputBtnBox">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="주소입력"
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                      />
+                      <button class="btn" type="button" id="button-addon2">
+                        주소검색
+                      </button>
+                    </div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="상세주소 입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold" style="width: 20%">자녀학년</th>
+                  <td style="text-align: left">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>학년 선택</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold" style="width: 20%">자녀학교</th>
+                  <td style="text-align: left">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="학교입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold" style="width: 20%">방문경로</th>
+                  <td style="text-align: left">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>홍보 문자</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bold" style="width: 20%">내일교육 아이디</th>
+                  <td style="text-align: left">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="내일교육 아이디입력"
+                      aria-label="default input example"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tableBox agreeInfo">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">약관 동의</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio1"
+                        id="flexRadio1"
+                      />
+                      <label class="form-check-label" for="flexRadio1">
+                        서비스 이용약관 전체 동의
+                      </label>
+                    </div>
+                  </th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio2"
+                        id="flexRadio2"
+                      />
+                      <label class="form-check-label" for="flexRadio2">
+                        서비스 이용약관 동의 (필수)
+                      </label>
+                    </div>
+                  </th>
+                  <td><button type="button">자세히</button></td>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio3"
+                        id="flexRadio3"
+                      />
+                      <label class="form-check-label" for="flexRadio3">
+                        개인정보 수집 및 이용 동의 (필수)
+                      </label>
+                    </div>
+                  </th>
+                  <td><button type="button">자세히</button></td>
+                </tr>
+                <tr>
+                  <th class="bold">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadio4"
+                        id="flexRadio4"
+                      />
+                      <label class="form-check-label" for="flexRadio4">
+                        마케팅 정보 수신 동의 (필수)
+                      </label>
+                    </div>
+                  </th>
+                  <td><button type="button">자세히</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btnArea">
+            <a href="/signUp.html">
+              <button class="yBtn">회원가입</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content contentSignUp mobile">
+      <div class="content_inner">
+        <div class="tableBox loginInfo">
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">아이디</span>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="예 : edu2021
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">비밀번호</span>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="6자 이상으로 입력해주세요
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left" class="tdPadding">
+                  <span class="bold must">비밀번호 확인</span>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="비밀번호를 한번 더 입력해주세요
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="btnArea">
+            <a href="#">
+              <button class="bBorderBtn">
+                <span>본인인증</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="tableBox personInfo">
+          <table>
+            <tbody>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">이름</span>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="이름을 입력해주세요
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left" class="inputPhoneBox">
+                  <span class="bold must">핸드폰번호 </span>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="000-0000-0000"
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left" class="inputSelectBox">
+                  <span class="bold must">생년월일</span>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="YYYY / MM / DD
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left" class="tdPadding">
+                  <span class="bold must">주소</span>
+
+                  <div class="input-group inputBtnBox">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="도로명 , 지번, 건물명 검색
+
+
+                        "
+                      aria-label="Recipient's username"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn"
+                      type="button"
+                      id="button-addon2"
+                    ></button>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="상세주소를 입력해주세요
+
+
+                      "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">자녀학년</span>
+
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>학년 선택</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">자녀학교</span>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="학교입력"
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">방문경로</span>
+
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>홍보 문자</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left">
+                  <span class="bold must">내일교육 아이디</span>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="내일교육 아이디를 입력해주세요
+
+
+                    "
+                    aria-label="default input example"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tableBox agreeInfo">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2"><span class="bold must">약관 동의</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  <div class="form-check radioCustom">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio1"
+                      id="flexRadio1"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadio1"> </label>
+                    <span>서비스 이용약관 전체 동의</span>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="form-check radioCustom">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio2"
+                      id="flexRadio2"
+                    />
+                    <label class="form-check-label" for="flexRadio2"> </label>
+                    <span>서비스 이용약관 동의 (필수)</span>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="form-check radioCustom">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio3"
+                      id="flexRadio3"
+                    />
+                    <label class="form-check-label" for="flexRadio3"> </label>
+                    <span>개인정보 수집 및 이용 동의 (필수)</span>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="form-check radioCustom">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio4"
+                      id="flexRadio4"
+                    />
+                    <label class="form-check-label" for="flexRadio4"> </label>
+                    <span>마케팅 정보 수신 동의 (필수)</span>
+                  </div>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+          <div class="btnArea">
+            <a href="/signUp.html">
+              <button class="bBtn"><span>회원가입</span></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pc">
+      <div class="footer_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 tit">
+              <h1><img src="./img/img_logo_g.png" alt="logo" /></h1>
+            </div>
+            <div class="col-lg-9 info">
+              <ul>
+                <li>
+                  <span>기업명 :</span> (주)에듀내일컨설팅 |
+                  <span> 대표이사 :</span> 이기정 |
+                  <span> 사업자등록번호 :</span> 809-81-0218
+                </li>
+                <li>
+                  <span>주소 :</span> 서울시 종로구 새문안로 3길 3 내일신문 지하
+                  1층 | <span> 전화번호 :</span> 02-2287-2386
+                </li>
+                <li>
+                  <span>통신판매번호 :</span> 제 2021-서울종로-0659 호 |
+                  <span> 이메일 :</span>kjlee@parksam.co.kr
+                </li>
+              </ul>
+              <p>
+                <a href="/terms.html"><span>이용약관</span></a> ㅣ
+                <a href="#"><span>개인정보처리방침</span></a>
+                Copyright © 2021 Edunaeil Consulting co.,ltd All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

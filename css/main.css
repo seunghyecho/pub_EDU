@@ -1,0 +1,979 @@
+body {
+  position: relative;
+}
+/* 카카오1:1문의 */
+.kakaoQnaBtn {
+  position: fixed;
+  z-index: 999;
+  right: 86px;
+  bottom: 80px;
+}
+.kakaoQnaBtn button {
+  width: 258px;
+  height: 97px;
+  background-image: url(../img/img_kakaoQna.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* 컨텐츠 중앙정렬 공통요소 */
+.content {
+  padding: 160px 0;
+}
+.content .content_inner {
+  text-align: center;
+}
+.content .tit {
+  margin-bottom: 111px;
+  width: 100%;
+}
+.content .tit h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.81;
+  letter-spacing: -1.8px;
+  color: #484848;
+}
+.content .tit h1 span {
+  font-size: 36px;
+  font-weight: 600;
+}
+.content .tit .titLine {
+  margin: 37px auto 30px;
+  width: 54px;
+  height: 6px;
+  background-color: #ffc600;
+}
+.content .tit p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #484848;
+}
+.content .tit p span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #484848;
+}
+.content .item {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btnArea {
+  display: flex;
+  justify-content: center;
+}
+
+.btnArea button {
+  margin: 0 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 335px;
+  height: 90px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+.m-13 {
+  margin: 13px 0;
+}
+.btnArea button.yBtn {
+  background-color: #ffc000 !important;
+}
+.btnArea button.gBtn {
+  background-color: #aaaaaa !important;
+}
+.btnArea button.gBorderBtn {
+  margin: 13px 0;
+  border: 1px solid #aaaaaa !important;
+  color: #aaaaaa;
+  background-color: transparent;
+}
+.btnArea button.gBorderBtn span {
+  color: #aaaaaa;
+}
+.btnArea button.bBorderBtn {
+  margin: 13px 0;
+  border: 1px solid #172296 !important;
+  color: #172296;
+  background-color: transparent;
+}
+.btnArea button.bBorderBtn span {
+  color: #172296;
+}
+.btnArea button.bBtn {
+  background-color: #172296 !important;
+}
+.btnArea button span {
+  font-size: 27.5px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+.btnArea button span.small {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* -------mainContent01---------------- */
+.mainContent01 {
+  padding: 90px 0;
+  width: 100%;
+  background-color: #f9f7f2;
+  box-sizing: border-box;
+}
+.mainContent01 p {
+  margin: 0 27px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: -1.5px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #3f3f3f;
+  z-index: 1;
+}
+
+.mainContent01 p span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+.mainContent01 p.marginArea {
+  margin: 0 -15px 0 0;
+}
+.mainContent01 .textGroup > .highlight::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  opacity: 0.3;
+  background-color: #fbebb5;
+  z-index: -1;
+}
+.mainContent01 span.highlight::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  opacity: 0.3;
+  background-color: #fbebb5;
+  z-index: -1;
+}
+.mainContent01 .highlight {
+  position: relative;
+  z-index: 1;
+}
+.mainContent01 .mainline {
+  margin: 40px auto 43px;
+  width: 591px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/img_mainLine.png);
+}
+.mainContent01 p {
+  font-size: 28px;
+  font-weight: 500;
+  color: #484848;
+}
+.mainContent01 .bold {
+  display: block;
+  margin-bottom: 80px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #474747;
+}
+.mainContent01 p.bold span {
+  font-size: 42px;
+  font-weight: 700;
+  color: #474747;
+}
+.mainContent01 .mission {
+  padding: 7px 0;
+  margin: 0 auto;
+  width: 203px;
+  border-radius: 25px;
+  background-color: #dfdfdf;
+}
+.mainContent01 .mission p {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #747474;
+}
+/* mainContent02 */
+.mainContent02 .item.item02 {
+  height: 795px;
+  background-image: url(../img/img_mainContent01.png);
+}
+/* mainContent03 */
+
+.mainContent03 {
+  width: 100%;
+  background-color: #ffffff;
+}
+.mainContent03 .item.item03 {
+  margin-bottom: 117px;
+  height: 232px;
+  background-image: url(../img/img_mainContent02.png);
+}
+/* mainContent05 */
+.mainContent05 {
+  background-color: #f8f8f8;
+  padding: 78px 0;
+}
+.mainContent05 .item05 {
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.mainContent05 .item05 .img {
+  width: 517px;
+  margin-right: 70px;
+  height: 352px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/img_subContent05.png);
+}
+.mainContent05 .item05 .text {
+  width: 63% !important;
+}
+.mainContent05 .item05 .text h3 {
+  margin-bottom: 22px;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+  color: #484848;
+}
+.mainContent05 .item05 .text h3 span {
+  font-size: 36px;
+  font-weight: 600;
+  color: #484848;
+}
+.mainContent05 .item05 .text .titLine {
+  width: 54px;
+  height: 6px;
+  background-color: #e1e1e1;
+}
+.mainContent05 .item05 .text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #454545;
+}
+/* 210427 수정 :s*/
+
+.mainContent05 .item05 .text p span {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: #454545;
+}
+/* 210427 수정 :e*/
+
+.mainContent05 .item05 .text ul {
+  margin-top: 50px;
+}
+.mainContent05 .highlight {
+  position: relative;
+  z-index: 1;
+}
+.mainContent05 .highlight::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  opacity: 0.3;
+  background-color: #fff000;
+  z-index: 0;
+}
+
+/* 메인 컨텐츠 마지막 텍스트 영역 추가 */
+.contentText p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -1.88px;
+  text-align: center;
+  color: #474747;
+}
+.contentText span {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -1.88px;
+  text-align: center;
+  color: #bb044d;
+}
+
+/* ------------------------------로그인-------------------------------------------- */
+section.contentLogin .itemLogin {
+  padding: 70px 90px;
+  display: flex;
+  justify-content: space-between;
+  width: 1094px;
+  height: 464px;
+  border-radius: 30px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: left;
+}
+section.contentLogin .itemLogin label {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #666666;
+}
+section.contentLogin .itemLogin input {
+  width: 449px;
+  height: 53px;
+  background-color: #f1f1f1;
+}
+section.contentLogin .itemLogin .btnArea {
+  margin: 24px 0;
+}
+section.contentLogin .itemLogin .btnArea button {
+  margin: 0;
+  width: 447px;
+  height: 61px;
+  font-size: 20.5px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+section.contentLogin .itemLogin .loginBtm.pc {
+  margin-top: -80px;
+}
+section.contentLogin .itemLogin .loginBtm ul {
+  display: flex;
+}
+section.contentLogin .itemLogin .loginBtm ul li {
+  margin: 0 5px;
+  position: relative;
+  width: auto;
+  text-align: center;
+  padding: 0 5px;
+}
+section.contentLogin .itemLogin .loginBtm ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #a2a2a2;
+  opacity: 0.8;
+}
+section.contentLogin .itemLogin .loginBtm ul li:last-child:after {
+  display: none;
+}
+section.contentLogin .itemLogin .loginBtm ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+section.contentLogin .itemLogin .loginBtm ul li:first-child {
+  margin-left: 0;
+}
+section.contentLogin .itemLogin .loginBtm ul li:first-child a {
+  font-weight: 700;
+  color: #e8bb1e;
+}
+section.contentLogin .itemLogin .img {
+  width: 301px;
+  height: 275px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/img_login.png);
+}
+/* ----------------------------회원가입----------------------------- */
+section.contentSignUp .tableBox {
+  margin: 120px 0;
+}
+section.contentSignUp table tbody tr td.tdPadding {
+  padding: 18px 36px;
+}
+section.contentSignUp .loginInfo p {
+  margin-top: 13px;
+  margin-left: 26px;
+}
+section.contentSignUp .btnArea {
+  margin: 120px 0;
+}
+section.contentSignUp table tbody tr td .inputBtnBox {
+  display: flex;
+  width: 489px;
+  margin-bottom: 15px;
+}
+section.contentSignUp table tbody tr td .inputBtnBox input {
+  margin-right: 11px;
+}
+section.contentSignUp table tbody tr td .inputBtnBox button {
+  width: 122px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #aaaaaa !important;
+  text-shadow: 3.8px 3.3px 10px rgba(26, 26, 26, 0.07);
+  font-size: 20.5px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+section.contentSignUp table thead th span.must {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: right;
+  color: #a2a2a2;
+  float: right;
+}
+section.contentSignUp table thead th span.must::before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 300;
+  color: #4178dc;
+}
+section.contentSignUp.mobile {
+  display: none;
+}
+/* -------------------아이디/비밀번호 찾기------------------------- */
+
+section.contentFindIdPw .btnArea {
+  margin: 80px 0;
+}
+section.contentFindIdPw table tbody td p {
+  margin-top: 13px;
+  margin-left: 0;
+}
+/* -------------------이용약관/ 개인정보취급방침------------------- */
+
+section.content.contentTerms .item {
+  text-align: left;
+}
+section.content.contentTerms .item p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5d5d5d;
+  line-height: 2.15;
+  letter-spacing: -1px;
+}
+section.content.contentTerms .item p b {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 959px) {
+  /* Content 공통 */
+  .content {
+    padding: unset;
+  }
+  .content .tit {
+    margin-bottom: 33px;
+  }
+  .content .tit h1 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: -1.35px;
+  }
+  .content .tit h1 span {
+    font-size: 17px;
+  }
+  .content .tit .titLine {
+    margin: 12px auto 10px;
+    width: 18px;
+    height: 2px;
+  }
+  /* main */
+
+  /* mainContent02 */
+  .mainContent02 {
+    padding: 50px 0;
+  }
+  .mainContent02 .item.item02 {
+    height: 269px;
+    width: 100%;
+    background-image: url(../img/mobile/img_mainContent01_mb.png);
+    background-size: contain;
+  }
+  /* mainContent05 */
+
+  .mainContent05 {
+    padding: 50px 16px;
+  }
+  .mainContent05 .item05 {
+    display: block;
+  }
+  .mainContent05 .item05 .img {
+    width: 100%;
+    margin-right: 0;
+    height: 164px;
+    background-size: cover;
+    background-image: url(../img/img_subContent05.png);
+  }
+  .mainContent05 .item05 .text {
+    width: 100% !important;
+  }
+  .mainContent05 .item05 .text h3 {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 1.22;
+    letter-spacing: -1.35px;
+  }
+  .mainContent05 .item05 .text h3 span {
+    font-size: 17px;
+  }
+  .mainContent05 .item05 .text .titLine {
+    width: 18px;
+    height: 2px;
+  }
+  .mainContent05 .item05 .text ul {
+    margin-top: 19px;
+  }
+  .mainContent05 .item05 .text p {
+    margin: 0 0 5px;
+    font-size: 10px;
+  }
+  .mainContent05 .item05 .text p span {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .mainContent05 .highlight::after {
+    height: 4px;
+  }
+  /* mainContent03 */
+  .mainContent03 {
+    padding: 50px 0;
+  }
+  .mainContent03 .item.item03 {
+    margin-bottom: 0;
+    width: 100%;
+    background-image: url(../img/mobile/img_mainContent02_mb.png);
+    background-size: contain;
+  }
+  /* mainContent01 */
+
+  .mainContent01 {
+    padding: 40px 16px 25px;
+  }
+  .mainContent01 p {
+    font-size: 13px;
+  }
+  .mainContent01 p.marginArea {
+    margin: 0 5px 0 0px;
+  }
+  /* 210427 수정 :s*/
+  .mainContent01 p span {
+    font-size: 13px;
+    letter-spacing: -0.98px;
+  }
+  /* 210427 수정 :e*/
+  .mainContent01 .highlight {
+    margin: 0 7px;
+  }
+  .mainContent01 .textGroup {
+    margin-bottom: 0;
+  }
+  .mainContent01 .mainline {
+    margin: 3px auto;
+    width: 75%;
+    background-size: contain;
+  }
+  .mainContent01 p.bold {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  .mainContent01 p.bold span {
+    margin: 0;
+    font-size: 18px;
+  }
+  .mainContent01 .mission {
+    width: auto;
+    border-radius: 25px;
+    background-color: transparent;
+  }
+  .mainContent01 .mission p {
+    font-size: 10px;
+    padding: 3px 13px;
+    border-radius: 25px;
+    background-color: #dfdfdf;
+    letter-spacing: inherit;
+  }
+  .mainContent01 .textGroup > .highlight::after {
+    width: 100%;
+    height: 7px;
+  }
+  /* contentText */
+  .contentText {
+    padding: 50px 0;
+  }
+  .contentText p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .contentText span {
+    font-size: 14px;
+  }
+  /* btnArea */
+  .btnArea {
+    width: 100%;
+  }
+  .btnArea a {
+    width: 100%;
+  }
+  .btnArea button {
+    margin: 0;
+    display: block;
+    border: none;
+    width: 100%;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .btnArea button span {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+  }
+   /* table 공통 */
+  section table tbody {
+    border-top: none;
+    border-bottom: none;
+  }
+  section table tbody tr {
+    border-bottom: none;
+  }
+  section table tbody td.inputPhoneBox input,
+  section table tbody td.inputSelectBox input,
+  section table tbody td.inputSelectBox select {
+    width: 100%;
+  }
+  table tbody td select,
+  table tbody td input[type="text"] {
+    width: 100%;
+    padding: 0 16px;
+  }
+  section .tableBox table tbody td span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #484848;
+  }
+  section .tableBox table tbody td span::after {
+    content: "*";
+    font-size: 23px;
+    font-weight: 300;
+    color: #4178dc;
+  }
+  /* 로그인 */
+  .content.contentLogin {
+    padding: 0;
+    margin-bottom: 40px;
+    margin-top: 32px;
+  }
+  section.contentLogin .itemLogin {
+    border: none;
+    width: 100%;
+    padding: 0 16px;
+    display: block;
+  }
+  section.contentLogin .itemLogin label {
+    display: none;
+  }
+
+  section.contentLogin .itemLogin input {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+  }
+  section.contentLogin .itemLogin .btnArea button {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+  }
+  section.contentLogin .itemLogin .loginBtm ul {
+    display: flex;
+    justify-content: center;
+  }
+  section.contentLogin .itemLogin .loginBtm ul li a {
+    font-size: 13px;
+  }
+  section.contentLogin .itemLogin .loginBtm.mobile ul li:first-child a {
+    font-weight: 300;
+    color: #a2a2a2;
+  }
+  section.contentLogin .itemLogin .btnArea button.mobile {
+    display: block;
+    margin-top: -55px;
+  }
+
+  /* 회원가입 */
+  .content.contentSignUp.mobile {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  section.contentLogin .itemLogin .loginBtm ul li::after {
+    width: 1px;
+    height: 14px;
+  }
+  section.contentSignUp.mobile {
+    display: block;
+  }
+  section.contentSignUp .tableBox {
+    padding: 0 16px;
+    margin: 0;
+    border-bottom: 11px solid #f4f4f4;
+  }
+  section.contentSignUp .tableBox.agreeInfo {
+    border-bottom: none;
+  }
+  section.contentSignUp .tableBox.personInfo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  section.contentSignUp table tbody tr td.tdPadding {
+    padding: 0;
+  }
+  section.contentSignUp table tbody tr td input,
+  section.contentSignUp table tbody tr td select {
+    width: 100%;
+    border-width: 0;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+  }
+
+  section.contentSignUp .btnArea {
+    margin: 15px 0 0;
+  }
+  section.contentSignUp table tbody tr td .inputBtnBox {
+    width: 100%;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  section.contentSignUp table tbody tr td .inputBtnBox input {
+    border: none;
+  }
+  section.contentSignUp table tbody tr td .inputBtnBox button {
+    margin-right: 8px;
+    width: auto;
+    background-image: url(../img/mobile/icon_search_mb.png);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+    background-color: transparent !important;
+  }
+  section.contentSignUp .agreeInfo {
+    padding: 25px 16px;
+  }
+  section.contentSignUp .agreeInfo table tbody tr th label,
+  section.contentSignUp .agreeInfo table tbody tr td button {
+    font-size: 14px;
+    font-weight: 400;
+    color: #686767;
+  }
+  section.contentSignUp table thead {
+    margin-bottom: 20px;
+  }
+  section.contentSignUp table thead th span.must {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #484848;
+    float: none;
+  }
+  section.contentSignUp table thead th span.must::before {
+    display: none;
+  }
+  section.contentSignUp table thead th span.must::after {
+    content: "*";
+    position: absolute;
+    top: -7px;
+    right: -12px;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 300;
+    color: #4178dc;
+  }
+  section.contentSignUp .agreeInfo table tbody tr:nth-of-type(1) th {
+    position: relative;
+  }
+  section.contentSignUp
+    .agreeInfo
+    table
+    tbody
+    tr:nth-of-type(1)
+    ~ tr
+    th
+    .radioCustom {
+    margin-top: 20px;
+  }
+  section.contentSignUp .agreeInfo table tbody tr:nth-of-type(1) th::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+  }
+
+  section.contentSignUp .agreeInfo table tbody tr:nth-of-type(1) th span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #484848;
+  }
+  section.contentSignUp .agreeInfo table tbody tr th span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #686767;
+  }
+  section.contentSignUp .agreeInfo table tbody tr {
+    height: 40px;
+  }
+  section.contentSignUp .agreeInfo table tbody tr th label {
+    padding-left: 9px;
+  }
+  section.contentSignUp .agreeInfo .btnArea {
+    margin-top: 50px;
+  }
+  section.contentSignUp .agreeInfo .btnArea button {
+    padding: 0 16px;
+  }
+
+  /* custom radio button */
+  section.contentSignUp .agreeInfo input[type="radio"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+  }
+  section.contentSignUp .agreeInfo input[type="radio"] + label {
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    border-radius: 100%;
+    border: solid 1.2px #d8d8d8;
+    background-color: #ffffff;
+    background-image: url(../img/mobile/icon_check_g_mb.png);
+    background-repeat: no-repeat;
+    background-size: 12px 8px;
+    background-position: center;
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: border-color 0.15s ease-out, color 0.25s ease-out,
+      background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+    cursor: pointer;
+  }
+  section.contentSignUp .agreeInfo input[type="radio"]:checked + label {
+    background-color: #172296;
+    color: #fff;
+    border-color: #172296;
+    background-image: url(../img/mobile/icon_check_w_mb.png);
+    z-index: 1;
+  }
+  section.contentSignUp .agreeInfo table .radioCustom {
+    display: flex;
+  }
+
+  /* 아이디/비밀번호 찾기 */
+
+  .content.contentFindIdPw.mobile {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  section.contentFindIdPw .tableBox {
+    padding: 0 16px;
+    margin: 0;
+  }
+  section.contentFindIdPw table thead th {
+    font-size: 18px;
+    font-weight: 600;
+    color: #484848;
+  }
+  section.contentFindIdPw table tbody tr td input,
+  section.contentFindIdPw table tbody tr td select {
+    width: 100%;
+    border-width: 0;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+  }
+  section.contentFindIdPw table tbody td p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #a2a2a2;
+  }
+  section.contentFindIdPw .btnArea {
+    margin-top: 0;
+  }
+  section.contentFindIdPw .btnArea button {
+    padding: 0 16px;
+  }
+
+  /* 이용약관, 개인정보취급방침 */
+
+  .content.contentTerms {
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  section.content.contentTerms .item p {
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: -0.25px;
+  }
+  section.content.contentTerms .item p b {
+    font-size: 10px;
+    font-weight: 600;
+  }
+  section.content.contentTerms .container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  section.content.contentTerms .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
