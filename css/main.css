@@ -732,10 +732,20 @@ section.content.contentTerms .item p b {
     margin-bottom: 33px;
   }
   .content .tit h1 {
+    width: fit-content;
+    margin: 0 auto;
     font-size: 18px;
+    font-weight: 600;
+    line-height: 1.44;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #484848;
+  }
+  .content .tit p {
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.33;
-    letter-spacing: -1.35px;
+    line-height: 3.63;
+    letter-spacing: -0.6px;
   }
   .content .tit h1 span {
     font-size: 17px;
@@ -751,11 +761,106 @@ section.content.contentTerms .item p b {
   .mainContent02 {
     padding: 50px 0;
   }
-  .mainContent02 .item.item02 {
-    height: 269px;
+  .content.mainContent02 .tit h1::before {
+    top: 50%;
+    margin-left: -4px;
+    left: 0;
+    width: 18px;
+    height: 15px;
+  }
+  .content.mainContent02 .tit h1::after {
+    width: 87px;
+    height: 5px;
+    margin-left: 40px;
+    left: 0;
+    bottom: -5px;
+  }
+  .mainContent02 .content_inner .itemWrap {
+    padding: 0 20px;
     width: 100%;
-    background-image: url(../img/mobile/img_mainContent01_mb.png);
-    background-size: contain;
+  }
+  .mainContent02 .content_inner .itemWrap::before {
+    content: "VS";
+    position: absolute;
+    margin-left: 0;
+    top: 0;
+    left: 43%;
+    transform: translate(-43%, 0%);
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    text-align: center;
+    color: #585858;
+  }
+  .mainContent02 .content_inner .itemWrap::after {
+    content: "";
+    position: absolute;
+    margin-left: 0;
+    top: 63%;
+    left: 43%;
+    transform: translate(-43%, -63%);
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+  .mainContent02 .content_inner .itemWrap .item > div {
+    margin-bottom: 15px;
+  }
+  .mainContent02 .content_inner .oldTit {
+    margin-left: 10px;
+    padding: 0 15px;
+    width: fit-content;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #fefefe;
+  }
+  .mainContent02 .content_inner .newTit {
+    width: 77px;
+    height: 19px;
+  }
+  .mainContent02 .content_inner ul li {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.73;
+    letter-spacing: -0.83px;
+    text-align: left;
+    color: #464646;
+  }
+  .mainContent02 .content_inner ul li b {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.73;
+    letter-spacing: -0.83px;
+    text-align: left;
+    color: #464646;
+  }
+  .mainContent02 .content_inner .itemWrap .item.old ul li {
+    padding-left: 5px;
+  }
+  .mainContent02 .content_inner .itemWrap .item.old ul li::before {
+    top: 8px;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #585858;
+  }
+  .mainContent02 .content_inner .itemWrap .item.new ul {
+    margin-left: -1px;
+  }
+  .mainContent02 .content_inner .itemWrap .item.new ul li {
+    padding-left: 13px;
+  }
+  .mainContent02 .content_inner .itemWrap .item.new ul li::before {
+    top: 8px;
+    left: 0;
+    width: 7px;
+    height: 7px;
   }
   /* mainContent04 */
 
@@ -763,7 +868,7 @@ section.content.contentTerms .item p b {
     padding: 50px 16px;
   }
   .mainContent04 .item04 {
-    display: block;
+    flex-direction: column-reverse;
   }
   .mainContent04 .item04 .img {
     width: 100%;
@@ -804,13 +909,14 @@ section.content.contentTerms .item p b {
   }
   /* mainContent03 */
   .mainContent03 {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
   .mainContent03 .item.item03 {
     margin-bottom: 0;
-    width: 100%;
-    background-image: url(../img/mobile/img_mainContent02_mb.png);
-    background-size: contain;
+    width: 293px;
+    height: 268px;
+    background-image: url(/img/img_maincontent03.png);
+    background-size: cover;
   }
   /* mainContent01 */
 
@@ -890,6 +996,12 @@ section.content.contentTerms .item p b {
     height: 45px;
     line-height: 30px;
     border-radius: 5px;
+  }
+  .btnArea .arrowBtn {
+    margin-right: 16px;
+    font-size: 12px;
+    line-height: 2.58;
+    letter-spacing: -0.9px;
   }
   .btnArea button span {
     font-size: 15px;
