@@ -100,7 +100,6 @@ body {
 }
 
 .btnArea button {
-  margin: 0 29px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,9 +131,14 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 79px;
+  width: 161px;
   height: 18px;
+  background-image: url(/img/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .m-13 {
   margin: 13px 0;
 }
@@ -336,6 +340,9 @@ body {
   background-position: center;
   background-size: cover;
 }
+.mainContent02 .content_inner .itemWrap .item.new {
+  margin-top: 3px;
+}
 .mainContent02 .content_inner .itemWrap .item.new ul {
   margin-left: 60px;
 }
@@ -451,10 +458,10 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .mainContent04 .item04 .img {
-  width: 517px;
-  margin-right: 70px;
+  width: 518px;
   height: 361px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -783,7 +790,7 @@ section.content.contentTerms .item p b {
     content: "VS";
     position: absolute;
     margin-left: 0;
-    top: 0;
+    top: 3px;
     left: 43%;
     transform: translate(-43%, 0%);
     display: block;
@@ -1038,6 +1045,10 @@ section.content.contentTerms .item p b {
     font-size: 12px;
     line-height: 2.58;
     letter-spacing: -0.9px;
+    background-image: url(/img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .btnArea button span {
     font-size: 15px;
