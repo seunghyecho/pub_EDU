@@ -367,13 +367,13 @@ figure .figure_inner {
   transform: translateY(-50%);
 }
 figure .figure_inner h1 {
-  text-shadow: 3.8px 3.3px 8.2px rgba(26, 26, 26, 0.05);
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.3;
-  letter-spacing: -2.5px;
-  text-align: center;
-  color: #484848;
+  text-shadow: 2.9px 4px 7.4px rgba(26, 26, 26, 0.05);
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -2.53px;
+  text-align: left;
+  color: #ffffff;
 }
 
 figure .figure_inner h1 span {
@@ -405,15 +405,16 @@ figure .figure_inner .bannerLine {
   margin: 47px 0 27px;
   width: 54px;
   height: 6px;
-  background-color: #ebd796;
+  background-color: #ffeaa2;
 }
 figure .figure_inner p {
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 1.6;
-  letter-spacing: -2.25px;
-  text-align: center;
-  color: #484848;
+  text-shadow: 2.9px 4px 7.4px rgba(26, 26, 26, 0.05);
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 2.42;
+  letter-spacing: -0.27px;
+  text-align: left;
+  color: #ffffff;
 }
 figure .figure_inner p span {
   font-size: 28px;
@@ -485,7 +486,7 @@ figure .mainBanner02 .figure_inner .mainBannerWrap::after {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
   width: 297px;
   height: 382px;
   background-image: url(../img/img_mainBanner02_w.png);

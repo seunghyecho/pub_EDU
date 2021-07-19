@@ -1,8 +1,27 @@
+.subContent01 .tit h1,
+.subContent02 .tit h1,
+.subContent03 .tit h1,
+.subContent04 .tit h2,
+.subContent05 .tit h1 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -1.73px;
+  text-align: center;
+  color: #474747;
+}
+.subContent02 .tit h1 b,
+.subContent03 .tit h1 b,
+.subContent04 .tit h1 b,
+.subContent05 .tit h1 b {
+  font-size: 35px;
+  font-weight: 600;
+}
+
 figure .subBanner01 {
   background-image: url(../img/img_subBanner2.png);
 }
-figure .subBanner01 {
-}
+
 .subContent01 .item01 {
   width: 1144px;
   height: 502px;
@@ -16,10 +35,82 @@ figure .subBanner01 {
   height: 439px;
   background-image: url(../img/img_subContent02.png);
 }
+/* subContent03 */
 .subContent03 .item03 {
-  width: 1144px;
-  height: 576px;
-  background-image: url(../img/img_subContent03.png);
+  height: auto;
+}
+.subContent03 .item03 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subContent03 .item03 ul li {
+  position: relative;
+  width: 100%;
+  height: 104px;
+  line-height: 104px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+}
+.subContent03 .item03 ul li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .subContent03 .item03 ul li:nth-of-type(1):before{
+  width: 50px;
+  height: 52px;
+  background-image: url(../img/img_pro_01.png);
+}
+.subContent03 .item03 ul li:nth-of-type(2):before{
+  width: 50px;
+  height: 54px;
+  background-image: url(../img/img_pro_02.png);
+}
+.subContent03 .item03 ul li:nth-of-type(3):before{
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/img_pro_03.png);
+}
+.subContent03 .item03 ul li:nth-of-type(4):before{
+  width: 47px;
+  height: 50px;
+  background-image: url(../img/img_pro_04.png);
+} */
+.subContent03 .item03 ul li {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subContent03 .item03 ul li:last-child {
+  margin-right: 0;
+}
+.subContent03 .item03 ul li span {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.48px;
+  text-align: left;
+  color: #474747;
+}
+.subContent03 .item03 ul li span.img {
+  margin-right: 26px;
+  display: inline-block;
+  width: 50px;
+  height: 54px;
+  overflow: hidden;
+}
+.subContent03 .item03 ul li span.img img {
+  width: 100%;
 }
 .subContent04 .tit .label {
   display: inline-block;
@@ -39,6 +130,7 @@ figure .subBanner01 {
   height: 535px;
   background-image: url(../img/img_subContent04.png);
 }
+/* midBar */
 .midBar {
   background-image: linear-gradient(
     to top,
@@ -48,32 +140,68 @@ figure .subBanner01 {
   );
   width: 100%;
 }
-.midBar h2 {
-  padding: 40px 0;
+.midBar .tit h1 {
+  margin-bottom: 0;
+  margin-top: 0;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
+  height: 110px;
+  line-height: 110px;
+  letter-spacing: -1.73px;
   text-align: center;
   color: #474747;
 }
-.midBar h2 span {
+.midBar .tit h1 b {
   font-size: 30px;
   font-weight: 600;
-  text-align: center;
-  color: #474747;
 }
-.subContent05 .item05 {
+.subContent05 .item05 ul {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.subContent05 .item05 .img {
-  width: 517px;
-  margin-right: 70px;
-  height: 352px;
-  background-size: contain;
+.subContent05 .item05 ul li {
+  padding: 50px 0;
+  margin-right: 33px;
+  width: calc(100% / 3);
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.subContent05 .item05 ul li:last-child {
+  margin-right: 0;
+}
+.subContent05 .item05 ul li .img {
+  margin: 40px auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/img_subContent05.png);
+}
+.subContent05 .item05 ul li:nth-of-type(1) .img {
+  width: 67px;
+  height: 75px;
+  background-image: url(../img/img_pro_05.png);
+}
+.subContent05 .item05 ul li:nth-of-type(2) .img {
+  width: 67px;
+  height: 75px;
+  background-image: url(../img/img_pro_06.png);
+}
+.subContent05 .item05 ul li:nth-of-type(3) .img {
+  width: 67px;
+  height: 75px;
+  background-image: url(../img/img_pro_07.png);
+}
+.subContent05 .item05 ul li p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.56;
+  letter-spacing: -1.08px;
+  text-align: center;
+  color: #4a4a4a;
 }
 .subContent05 .item05 .text li {
   position: relative;
@@ -171,6 +299,44 @@ figure .subBanner01 {
 }
 .subContent06 .btnArea {
   margin: 130px 0;
+}
+/* subContnent07 */
+.subContnent07 .item07 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subContnent07 .item07 ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 271px;
+  height: 271px;
+  border-radius: 50%;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+.subContnent07 .item07 ul li h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.37;
+  letter-spacing: -1.23px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.subContnent07 .item07 ul li h2.color-b{
+  color: #3c69bc;
+  
+}
+.subContnent07 .item07 ul li p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.68;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #4a4a4a;
 }
 /* 컨설팅 (회원) 정기구독 */
 .subConsultiong01 {
@@ -1202,7 +1368,7 @@ figure .subBanner03 {
   background-position: -9px 24px;
   background-image: url(../img/img_subConsult08.png);
 }
-  /* img09 추가 210429 */
+/* img09 추가 210429 */
 .subConsult .items .item .img.img09 {
   background-position: 12px 24px;
   background-image: url(../img/img_subConsult09.png);
@@ -1993,22 +2159,9 @@ figure .subBanner05 {
     height: 313px;
     background-image: url(../img/mobile/img_subContent02_mb.png);
   }
+  /* subContent03 */
   .subContent03 {
     padding: 52px 16px;
-  }
-  .subContent03 .tit p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.83;
-    letter-spacing: -0.6px;
-  }
-  .subContent03 .tit p span {
-    font-size: 12px;
-  }
-  .subContent03 .item03 {
-    width: 100%;
-    height: 379px;
-    background-image: url(../img/mobile/img_subContent03_mb.png);
   }
   .subContent04 {
     padding: 50px 16px;

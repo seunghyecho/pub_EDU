@@ -29,13 +29,14 @@ body {
 }
 .content .tit h1 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.63;
   letter-spacing: -2px;
   text-align: center;
   color: #464646;
   position: relative;
 }
+
 .content.mainContent02 .tit h1::before {
   content: "";
   display: block;
@@ -114,9 +115,9 @@ body {
   color: #ffffff;
 }
 .btnArea .arrowBtn {
+  position: relative;
   margin-left: auto;
   width: auto;
-  position: relative;
   text-shadow: 2.6px 4.3px 10px rgba(26, 26, 26, 0.07);
   font-size: 24px;
   font-weight: 300;
@@ -129,16 +130,22 @@ body {
   content: "";
   display: inline-block;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
-  width: 161px;
+  width: 217px;
   height: 18px;
-  background-image: url(/img/arrow.svg);
+  background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAAASCAMAAADhT4szAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAbFBMVEX///94eHfY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj///+YoFmZAAAAInRSTlMAAFupCKfCEgOR1iBz/ucyVvjzSD7u+2Iq4IABGc6eBQ246YfDKQAAAAFiS0dEAIgFHUgAAAAHdElNRQflBxMQNjNQO1fjAAAAgUlEQVRIx93PhQ3AMAADwZQpZU7Z+w/ZKSxLuQn+jfFCGMXqBJIEaaZu4MgLlJU6gsTWTatuIOn6YVQ3kEzzsqobSLYd7lBHcJwX7kcdwfF++F51BMdz4zrVERyHw76pI0jWZZ7UDSTj0HfqBpK2qa26gaQqUeQm8FGWIjHwlb9nP9J4QAOcFZibAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
-
+.mainContent03 .btnArea .arrowBtn::before {
+  left: -16px;
+  width: 161px;
+}
+.mainContent04 .btnArea .arrowBtn::before {
+  left: -16px;
+}
 .m-13 {
   margin: 13px 0;
 }
@@ -538,10 +545,10 @@ body {
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 10px;
   width: 22px;
   height: 24px;
-  background-image: url(/img/icon_check.png);
+  background-image: url(/img/icon_check_b.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -928,6 +935,11 @@ section.content.contentTerms .item p b {
     line-height: 1.83;
     letter-spacing: -1.13px;
   }
+  .mainContent04 .item04 .text ul li .box-b::before {
+    left: 7px;
+    width: 10px;
+    height: 11px;
+}
   /* mainContent05 */
   .mainContent05 {
     padding: 43px 15px;
@@ -944,7 +956,7 @@ section.content.contentTerms .item p b {
   }
   /* mainContent03 */
   .mainContent03 {
-    padding: 50px 0 0;
+    padding: 50px 16px 0;
   }
   .mainContent03 .item.item03 {
     margin-bottom: 0;
@@ -1045,10 +1057,17 @@ section.content.contentTerms .item p b {
     font-size: 12px;
     line-height: 2.58;
     letter-spacing: -0.9px;
-    background-image: url(/img/arrow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .mainContent03 .btnArea .arrowBtn::before {
+    left: -16px;
+    width: 78px;
+  }
+  .mainContent04 .btnArea .arrowBtn::before {
+    left: -9px;
+    width: 106px;
   }
   .btnArea button span {
     font-size: 15px;
