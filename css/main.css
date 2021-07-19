@@ -456,7 +456,7 @@ body {
   width: 517px;
   margin-right: 70px;
   height: 361px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../img/img_subContent04.png);
@@ -873,9 +873,7 @@ section.content.contentTerms .item p b {
   .mainContent04 .item04 .img {
     width: 100%;
     margin-right: 0;
-    height: 164px;
-    background-size: cover;
-    background-image: url(../img/img_subContent05.png);
+    height: 151px;
   }
   .mainContent04 .item04 .text {
     width: 100% !important;
@@ -887,7 +885,7 @@ section.content.contentTerms .item p b {
     letter-spacing: -1.35px;
   }
   .mainContent04 .item04 .text h3 span {
-    font-size: 17px;
+    font-size: 18px;
   }
   .mainContent04 .item04 .text .titLine {
     width: 18px;
@@ -906,6 +904,36 @@ section.content.contentTerms .item p b {
   }
   .mainContent04 .highlight::after {
     height: 4px;
+  }
+  .mainContent04 .item04 .text ul li,
+  .mainContent04 .item04 .text ul li span {
+    font-size: 15px;
+    line-height: 2.07;
+    letter-spacing: -1.05px;
+  }
+  .mainContent04 .item04 .text ul li .box-b {
+    margin-right: 10px;
+    height: 28px;
+    line-height: 28px;
+    width: 116px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.83;
+    letter-spacing: -1.13px;
+  }
+  /* mainContent05 */
+  .mainContent05 {
+    padding: 43px 15px;
+  }
+  .mainContent05 .item05 h3 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.47;
+    letter-spacing: -0.98px;
+  }
+  .mainContent05 .item05 h3 span {
+    font-size: 15px;
+    font-weight: 600;
   }
   /* mainContent03 */
   .mainContent03 {
@@ -993,9 +1021,17 @@ section.content.contentTerms .item p b {
     display: block;
     border: none;
     width: 100%;
-    height: 45px;
-    line-height: 30px;
+    height: 48px;
+    line-height: 48px;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -1.35px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .btnArea button.yBtn {
+    width: 100%;
   }
   .btnArea .arrowBtn {
     margin-right: 16px;
