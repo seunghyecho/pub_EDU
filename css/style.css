@@ -498,7 +498,7 @@ figure .mainBanner02 .figure_inner .mainBannerWrap::after {
   position: absolute;
   right: 0;
   top: 5px;
-  width: 297px;
+  width: 385px;
   height: 382px;
   background-image: url(../img/img_mainBanner02_w.png);
   background-size: cover;
@@ -709,6 +709,20 @@ footer .info p span {
     height: 215px;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  figure.main .figure_inner h1 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #484848;
+  }
+  figure.main .figure_inner p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -1.05px;
+    text-align: center;
+    color: #484848;
   }
   figure .figure_inner h1 {
     font-size: 20px;
