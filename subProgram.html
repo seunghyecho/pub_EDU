@@ -17,78 +17,17 @@
     <!-- 부트스트랩 -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
+ 
+
+    <script src="js/header.js"></script>
+
     
-
-    <script src="./js/header.js"></script>
-
-    <script>
-   $(document).ready(function(){
-    $('.subInfo').slick({
-      arrows: false,
-      dots: false,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      variableWidth: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: false,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            dots: true,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-       
-      ]
-    });
-    $('.membership').slick({
-      arrows: false,
-      dots: false,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      variableWidth: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: false,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            dots: true,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-      ]
-    });
-   });
-    </script>
   </head>
   <body>
     <div class="util pc">
@@ -106,7 +45,7 @@
           <div class="row">
             <div class="col-md-6 logo">
               <a href="/main.html"
-                ><img src="./img/img_logo.png" alt="logo"
+                ><img src="img/img_logo.png" alt="logo"
               /></a>
             </div>
             <div class="col-md-6 gnb">
@@ -204,7 +143,13 @@
       <div class="content_inner container">
         <div class="row">
           <div class="tit">
-            <h1>때로는 <b>원하는 주제로<br class="mobile"> 올바른 방향을 설정</b>하세요</h1>
+            <h1>
+              때로는
+              <b
+                >원하는 주제로<br class="mobile" />
+                올바른 방향을 설정</b
+              >하세요
+            </h1>
             <div class="titLine"></div>
           </div>
           <div class="item item03">
@@ -243,8 +188,14 @@
         <div class="row">
           <div class="tit">
             <span class="label">프로그램 이용 예시</span>
-            <div class="mobile"><button class="btn-border"><span>펼쳐보기</span></button></div>
-            <h1>고2 학생이 <b>학기 초부터 시작</b>한 경우<br class="mobile">(스탠다드 기준)</h1>
+            <div class="mobile">
+              <button class="btn-border"><span>펼쳐보기</span></button>
+            </div>
+            <h1>
+              고2 학생이 <b>학기 초부터 시작</b>한 경우<br
+                class="mobile"
+              />(스탠다드 기준)
+            </h1>
             <div class="titLine mobile"></div>
           </div>
           <div class="item item04"></div>
@@ -268,8 +219,8 @@
         <div class="row">
           <div class="tit">
             <h1>
-              <b>매월 올바른 정보</b>까지 쌓이면<br class="mobile"> <b>더욱 좋은 선택</b>이
-              가능합니다
+              <b>매월 올바른 정보</b>까지 쌓이면<br class="mobile" />
+              <b>더욱 좋은 선택</b>이 가능합니다
             </h1>
             <div class="titLine"></div>
           </div>
@@ -314,12 +265,13 @@
             <h1>박샘 정기상담 멤버십</h1>
             <div class="titLine"></div>
             <p>
-              가입은 중3부터 고2까지 가능하며,<br class="mobile">수시지원까지 책임지고 지도합니다.
+              가입은 중3부터 고2까지 가능하며,<br class="mobile" />수시지원까지
+              책임지고 지도합니다.
             </p>
           </div>
           <div class="item item06">
             <div class="membership slide-wrapper responsive">
-              <div class="slide wrap yellow" >
+              <div class="slide wrap yellow">
                 <div class="top yTop">
                   <h2>정기상담 라이트</h2>
                   <h3>월 <b>33,000</b>원</h3>
@@ -335,7 +287,7 @@
                   <li class="checkOff">담당 컨설턴트와의 질의응답</li>
                 </ul>
               </div>
-              <div class="slide wrap blue" >
+              <div class="slide wrap blue">
                 <div class="top bTop">
                   <h2>정기상담 라이트</h2>
                   <h3>월 <b>33,000</b>원</h3>
@@ -420,7 +372,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 tit">
-              <h1 class="pc"><img src="./img/img_logo_g.png" alt="logo" /></h1>
+              <h1 class="pc"><img src="img/img_logo_g.png" alt="logo" /></h1>
               <h1 class="mobile"></h1>
             </div>
             <div class="col-lg-9 info">
@@ -452,5 +404,71 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+    <script>
+      $(document).ready(function () {
+        $(".subInfo").slick({
+          arrows: false,
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          variableWidth: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: false,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                dots: true,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+        $(".membership").slick({
+          arrows: false,
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: false,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                dots: true,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
