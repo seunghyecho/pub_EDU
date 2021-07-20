@@ -2531,7 +2531,8 @@ figure .subBanner05 {
     line-height: 3.15;
     letter-spacing: -0.83px;
   }
-  .subContent06 .item06 .membership .wrap .yTop h2::before {
+  .subContent06 .item06 .membership .wrap .yTop h2::before,
+  .subContent06 .item06 .membership .wrap .bTop h2::before {
     bottom: 15px;
   }
   .subContent06 .item06 .membership .wrap .top h3 {
