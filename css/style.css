@@ -290,7 +290,6 @@ figure {
   height: 648px;
   position: relative;
   background-color: #c0b17d2b;
-
 }
 
 figure::after {
@@ -554,6 +553,26 @@ footer .info p span {
   display: block;
   visibility: visible;
 }
+.slick-dots {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+}
+.slick-dots li {
+  margin: 0 7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+.slick-dots li.slick-active {
+  background-color: #5687ff;
+}
+.slick-dots li button {
+  color: transparent;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1320px !important;
@@ -606,7 +625,7 @@ footer .info p span {
     background-size: 8px 15px;
     background-position: center;
   }
- 
+
   header .header_inner .center {
     position: absolute;
     left: 50%;
@@ -636,7 +655,7 @@ footer .info p span {
     text-align: center;
     color: #484848;
   }
-  header .header_inner .apply a{
+  header .header_inner .apply a {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -673,9 +692,21 @@ footer .info p span {
   figure::after {
     background-color: rgba(0, 0, 0, 0.6);
   }
+  figure {
+    width: 100%;
+    height: 212px;
+    position: relative;
+    background-color: #c0b17d2b;
+  }
   figure .banner {
     width: 100%;
-    height: 225px;
+    height: 212px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  figure.main .banner {
+    width: 100%;
+    height: 215px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -686,7 +717,11 @@ footer .info p span {
     margin-top: 0;
   }
   figure .figure_inner h1 span {
-    font-size: 27px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -1px;
+    text-align: left;
   }
   /* 정기구독형 text 및 영역 수정 210423 : s*/
   figure .figure_inner h1 span.dot {
