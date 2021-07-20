@@ -47,7 +47,7 @@ body {
   transform: translate(-50%, -50%);
   width: 35px;
   height: 28px;
-  background-image: url(/img/icon_start.png);
+  background-image: url(../img/icon_start.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,7 +62,7 @@ body {
   transform: translate(-50%, -50%);
   width: 187px;
   height: 10px;
-  background-image: url(/img/icon_underline.png);
+  background-image: url(../img/icon_underline.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -168,15 +168,15 @@ body {
 }
 .btnArea button.bBorderBtn {
   margin: 13px 0;
-  border: 1px solid #172296 !important;
-  color: #172296;
+  border: 1px solid #3c69bc !important;
+  color: #3c69bc;
   background-color: transparent;
 }
 .btnArea button.bBorderBtn span {
-  color: #172296;
+  color: #3c69bc;
 }
 .btnArea button.bBtn {
-  background-color: #172296 !important;
+  background-color: #3c69bc !important;
 }
 .btnArea button span {
   font-size: 27.5px;
@@ -342,7 +342,7 @@ body {
   display: block;
   width: 54px;
   height: 53px;
-  background-image: url(/img/icon_mainContent02.png);
+  background-image: url(../img/icon_mainContent02.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -413,7 +413,7 @@ body {
   margin: 0 auto;
   width: 240px;
   height: 61px;
-  background-image: url(/img/img_logo_b.png);
+  background-image: url(../img/img_logo_b.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -437,7 +437,7 @@ body {
 .mainContent02 .content_inner .item02 .icon {
   width: 54px;
   height: 53px;
-  background-image: url(/img/icon_mainContent02.png);
+  background-image: url(../img/icon_mainContent02.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -548,7 +548,7 @@ body {
   left: 10px;
   width: 22px;
   height: 24px;
-  background-image: url(/img/icon_check_b.png);
+  background-image: url(../img/icon_check_b.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -962,7 +962,7 @@ section.content.contentTerms .item p b {
     margin-bottom: 0;
     width: 293px;
     height: 268px;
-    background-image: url(/img/img_maincontent03.png);
+    background-image: url(../img/img_maincontent03.png);
     background-size: cover;
   }
   /* mainContent01 */

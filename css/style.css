@@ -375,6 +375,10 @@ figure .figure_inner h1 {
   text-align: left;
   color: #ffffff;
 }
+figure.main .figure_inner h1 {
+  text-align: center;
+  color: #484848;
+}
 
 figure .figure_inner h1 span {
   font-size: 52px;
@@ -415,6 +419,14 @@ figure .figure_inner p {
   letter-spacing: -0.27px;
   text-align: left;
   color: #ffffff;
+}
+figure.main .figure_inner p {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: -2.25px;
+  text-align: center;
+  color: #484848;
 }
 figure .figure_inner p span {
   font-size: 28px;

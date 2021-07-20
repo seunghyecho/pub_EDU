@@ -297,8 +297,136 @@ figure .subBanner01 {
 .subContent06 .item06 .img table tbody tr td span {
   font-size: 16.5px;
 }
-.subContent06 .btnArea {
-  margin: 130px 0;
+.subContent06 .item06 .membership {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.subContent06 .item06 .membership .wrap {
+  margin-right: 45px;
+  padding: 70px 30px;
+  box-sizing: border-box;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4.1px 5.7px 25.5px 2.5px rgba(26, 26, 26, 0.03);
+}
+.subContent06 .item06 .membership .wrap:last-of-type {
+  margin-right: 0;
+}
+.subContent06 .item06 .membership .wrap .top h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.95;
+  letter-spacing: -1.38px;
+  text-align: center;
+  color: #474747;
+  position: relative;
+}
+.subContent06 .item06 .membership .wrap .yTop h2::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  bottom: 8px;
+  height: 11px;
+  background-color: #ffbf0027;
+
+}
+.subContent06 .item06 .membership .wrap .bTop h2::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  bottom: 8px;
+  height: 11px;
+  background-color: #3c69bc36;
+
+}
+.subContent06 .item06 .membership .wrap .top h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.74px;
+  text-align: center;
+  color: #474747;
+}
+.subContent06 .item06 .membership .wrap .top h3 b {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -1.19px;
+}
+.subContent06 .item06 .membership .wrap .btnArea {
+  margin: 50px 0;
+}
+.subContent06 .item06 .membership .wrap .btnArea button {
+  width: 100%;
+}
+.subContent06 .item06 .membership .wrap ul.descriptionList li {
+  padding: 18px 0  18px 30px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 2.49;
+  letter-spacing: -1.08px;
+  text-align: left;
+  color: #474747;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+}
+.subContent06 .item06 .membership .wrap.yellow ul.descriptionList li::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 20px;
+  background-image:url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAABbElEQVQ4jaWTTStGQRTHf14mKRZslS+AMsrGN7C1YWGpZGPhwdIYEWKBkIUVioUsbC18hFnbSF5KUVIUDdHRPI8xrrrP46zOOffc3/2fl1vFP8w7MwQ0VATxztQDM0ABuKitANAMnABdIbVVXYGQwQjwCqyVBfHOtANzUepYafuSG+KdkfntyiBD6g0YF6ccJaNAZxTvKW0vc0O8M03ARJR6BqaKQS3fE18EJpW2DxmcWaAlipeUtlcliHdGpr0QihqBgURFNzAcpT6Ag7hG2umNvtLvnRlLVKwANVG8rLQ9SyGTwH0s3TvTFlR0AD3Rs3dpJe21Wml7A4xEOTnp+eAXkvp1pe1dCin9O96Z/Wgecol9wBFQVywBWpW2t7+URL6s8CX48uJhBBDbzAL8gChtr4GNpK2iyUbWsgCpErFp4DGj7lRpe54LorR9ArYz6uSf+dOyzn41WbnMSeaTHxLOeSds40tFUJhtwCfBFWFT0fqR2wAAAABJRU5ErkJggg==");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.subContent06 .item06 .membership .wrap.blue ul.descriptionList li::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 20px;
+  background-image:url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAABYklEQVQ4jZ2UPSxEQRSFv12CVqJW0AghFLppJBMFrRqJKMZfKBARpYhqiWIqPxvRiFpjotlRSIiCkihFKQqR+Msk8+TmeSu7e4qXuWfeOfe8eTeTo0Yo40aA9qoNlHF5YA7YBJ7qaxDvA6OROshXGaBTiAMKFRso40LaI0Gde6tfqkmwCPSIeiU8KjpEZVwbcAU0R+rCW63CotIEU0IcsJYscrFDK7AEzHqrv1PdO4BbIPljp97q4WQ/r4wbB66BaWAho/u2EAecyM3wCUNAS6w3lHH9ovsAMCjeD+dwmDZYBl5j3QDsKuPqYj2ZSrPlrf6QRHIGM8CO4MeAM+ARaIzcA9DlrX5PJwiwwKXg54EJIQ4opMW/Bt7qzzgoCfqAVVE/A3tpsUwQTEpASew1iXXRW/32r0GETCFRLMP/HWVl3A3QK6g7b3V3OYOsUV5P1cflxJkG3uowafex/IoXSDaAHywFVlEIO+5wAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.subContent06 .item06 .membership .wrap ul.descriptionList li:last-child{
+  border-bottom: none;
+}
+.subContent06 .item06 .membership .wrap ul.descriptionList li b{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 2.49;
+  letter-spacing: -1.08px;
+  text-align: left;
+  color: #474747;
+}
+.subContent06 .item06 .membership .wrap ul.descriptionList li.checkOff{
+  color: #d4d4d4;
+}
+.subContent06 .item06 .membership .wrap ul.descriptionList li.checkOff::before{
+  background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAUCAYAAABSx2cSAAABQUlEQVQ4jZ2TvytFYRjHP24IkzIoJp7VgrJIyopYWGyKgfwPBpPZJIliZBLdwY8YbQaTr1WuJIryq/TWe26P497bOb7D2/N+z/N5v0/vOaeOf0jSANCTG5Y0AiwDz4Wc4DSwCrQAxczJkkLQEdAWrfE8yYsOvDGzu0ywpC5gxlkbYcmaHFLrY10CzjLBkrqBQWdtmdlXGQ4Nkmar8EtAQ6wfgb3kQUHSRDgNWJDUm0rtA4acdWFm32UYGI7vLWhFUpNrnnP1B7DuDw/wGvAZ9+3AfEztAPpd76mZlX7BZnYL7DpvSlIrMJa6UN9TTg7aBO5j3QxMAqOu78rMrivCZvYGbDs/jN7p9jtpkNRYB8BTrBud/wKc14RjeqWE4+SjqJUcdOhuPtFJJfAPbGYP8bdL9ApcZoKj9oH3WBerjQzwA/PzW4dq7Ir0AAAAAElFTkSuQmCC");
 }
 /* subContnent07 */
 .subContnent07 .item07 ul {
