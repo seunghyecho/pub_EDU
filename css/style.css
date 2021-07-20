@@ -800,15 +800,15 @@ footer .info p span {
     margin: 20px auto;
   }
   figure .mainBanner02 .figure_inner .mainBannerWrap::before {
-    left: 0;
+    left: -4px;
     top: 20px;
-    width: 90px;
+    width: 100px;
     height: 125px;
   }
   figure .mainBanner02 .figure_inner .mainBannerWrap::after {
     right: 0;
     top: 30px;
-    width: 85px;
+    width: 103px;
     height: 116px;
   }
   .mainBanner02 .figure_inner .mainBannerWrap .left p,
