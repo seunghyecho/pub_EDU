@@ -315,6 +315,23 @@ figure .subBanner01 {
   border-radius: 50%;
   border: solid 1px #e8e8e8;
   background-color: #fff;
+  position: relative;
+}
+.subContnent07 .item07 ul li::after {
+  content: "";
+  display: block;
+  margin-right: -50px;
+  position: absolute;
+  right: 0;
+  width: 17px;
+  height: 42px;
+  background-image: url(../img/icon_arrow_r.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.subContnent07 .item07 ul li:last-child::after {
+  display: none;
 }
 .subContnent07 .item07 ul li h2 {
   margin-top: 0;
@@ -326,9 +343,8 @@ figure .subBanner01 {
   text-align: center;
   color: #4a4a4a;
 }
-.subContnent07 .item07 ul li h2.color-b{
+.subContnent07 .item07 ul li h2.color-b {
   color: #3c69bc;
-  
 }
 .subContnent07 .item07 ul li p {
   font-size: 20px;
@@ -337,6 +353,44 @@ figure .subBanner01 {
   letter-spacing: -1px;
   text-align: center;
   color: #4a4a4a;
+}
+.subContnent07 .notice {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.subContnent07 .notice h2 {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 2.02;
+  letter-spacing: -1.33px;
+  text-align: left;
+  color: #474747;
+}
+.subContnent07 .notice ul {
+  padding: 40px 0;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.subContnent07 .notice ul li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.78;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #999999;
+}
+.subContnent07 button.btn-border {
+  width: 419px;
+  height: 74px;
+  border-radius: 5px;
+  border: solid 1px #aaaaaa;
+  background-color: #aaaaaa;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.95;
+  letter-spacing: -1.38px;
+  text-align: center;
+  color: #929191;
 }
 /* 컨설팅 (회원) 정기구독 */
 .subConsultiong01 {
